@@ -6,7 +6,7 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page_body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-img" src="img/logo-header-mobil.svg" width="34" height="38" alt="Логотип сайта кот-энержи.">
@@ -36,12 +36,12 @@
   <main class="main-form">
     <section class="selection">
       <h1 class="selection__losung">Подбор программы</h1>
-      <P class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <form class="form" action="https://echo.htmlacademy.ru/" method="post" >
     <fieldset class="form__personal">
-      <legend class="visually-hidden">Персональные Данные.
+      <legend class="visually-hidden">Персональные данные.
       </legend>
-      <ul class="form__ppersonal-ist">
+      <ul class="form__personal-list">
         <li class="form__personal-item">
           <label class="form__personal-name">ИМЯ:*
             <input class="form__personal-input" type="text" name="name" value="Барсик">
@@ -67,21 +67,21 @@
       <ul class="form__select-list">
         <li class="form__select-item">
           <label class="form__select-control">
-            <input class="form__select-input" type="radio" name="minus" checked>
+            <input class="form__select-input" type="radio" name="program" value="minus" checked>
             <span class="form__select-mark"></span>
             <span class="form__select-name">Похудение</span>
        </label>
         </li>
         <li class="form__select-item">
           <label class="form__select-control">
-            <input class="form__select-input" type="radio" name="plus">
+            <input class="form__select-input" type="radio" name="program" value="plus">
             <span class="form__select-mark"></span>
             <span class="form__select-name">Набор массы</span>
           </label>
         </li>
         <li class="form__select-item">
           <label class="form__select-control">
-            <input class="form__select-input" type="radio" name="default">
+            <input class="form__select-input" type="radio" name="program" value="default">
             <span class="form__select-mark"></span>
             <span class="form__select-name">Не знаю (Нужен ваш совет)</span>
           </label>
@@ -96,7 +96,7 @@
             <input class="form__contact-input" type="email" name="emial" value="кuklachev@gmail.com">
           </label>
         </li>
-        <li class="formm__contact-item">
+        <li class="form__contact-item">
           <label class="form__contact-name">Телефон:*
             <input class="form__contact-input" type="tel" name="tell" value="8 (960) 900-60-90">
           </label>
@@ -104,37 +104,38 @@
       </ul>
     </fieldset>
     <div class="form__comment">
-      <legend class="form__comment-title">Комментарий</legend>
-      <textarea class="form__comment__text" name="comment" cols="40" rows="3"
+      <label class="form__comment-title">Комментарий
+      <textarea class="form__comment-text" name="comment" cols="40" rows="3"
         placeholder="Расскажите обо всех повадках кота"></textarea>
+       </label>
     </div>
     <fieldset class="form__additional">
       <legend class="form__additional-title">Дополнително</legend>
       <ul class="form__additional-list">
         <li class="form__additional-item">
         <label class="form__additional-control">
-          <input class="form__additional-input" type="checkbox" name="sugar" checked>
+          <input class="form__additional-input" type="checkbox" name="sugar" value="sugar" checked>
           <span class="form__additional-mark"></span>
           <span class="form__additional-name">Сахарозаменитель</span>
         </label>
       </li>
         <li class="form__additional-list">
           <label class="form__additional-control">
-            <input class="form__additional-input" type="checkbox" name="minus">
+            <input class="form__additional-input" type="checkbox" name="water" value="water">
             <span class="form__additional-mark"></span>
             <span class="form__additional-name">Питьевая вода</span>
           </label>
         </li>
         <li class="form__additional-list">
           <label class="form__additional-control">
-            <input class="form__additional-input" type="checkbox" name="minus">
+            <input class="form__additional-input" type="checkbox" name="milk" value="milk">
             <span class="form__additional-mark"></span>
             <span class="form__additional-name">Молоко</span>
           </label>
         </li>
         <li class="form__additional-list">
           <label class="form__additional-control">
-          <input class="form__additional-input" type="checkbox" name="minus">
+          <input class="form__additional-input" type="checkbox" name="vitamin" value="vitamin">
           <span class="form__additional-mark"></span>
           <span class="form__additional-name">Витамины</span>
         </label>
@@ -149,8 +150,7 @@
   <footer class="main-footer">
     <section class="invitation">
     <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
-    <address class="invitation__adress">ул. Большая
-      Конюшенная, д. 19/8 <br>Санкт-Петербург</address>
+    <address class="invitation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
   </section>
   <section class="map">
     <h2 class="visually-hidden">Магазин кот-энержи на карте.</h2>
@@ -186,13 +186,15 @@
         </li>
       </ul>
 
-    <div class="index-footer__copyright">
-      <a class="index-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="index-footer__text--copyright">HTML Academy</span>
-        <svg class="index-footer__copyright-logo "  aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section class="copyright">
+      <h2 class="visually-hidden">Ааторские права магазина Кот Энержи.</h2>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text--copyright">HTML Academy</span>
+        <svg class="copyright__logo "  aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
           </svg>
       </a>
-    </div>
+    </section>
   </section>
   </footer>
 
