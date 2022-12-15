@@ -1,0 +1,28 @@
+.advantages__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;}
+.advantages__item{
+    background-color:#F2F2F2;
+    width: 280px;
+    height: 266px;
+}
+.advantages__link{
+    color: #000;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.advantages__title{
+    font-size: 24px;
+    line-height: 37px;
+    margin-top: 50px;
+    margin-bottom: 29px;
+}
+.advantages__description{
+    font-family: "Lato",sans-serif;
+    line-height:18px ;
+    color: #444444;
+    margin-bottom: 42px;
+}
