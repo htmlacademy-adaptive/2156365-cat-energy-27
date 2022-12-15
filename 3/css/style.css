@@ -1,0 +1,464 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/lato/Lato-Regular.woff2") format("woff22");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/oswald/oswaldregular.woff2") format("woff22");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/oswald/oswaldmedium.woff2") format("woff22");
+  font-display: swap;
+}
+.visully-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.main-intro__text {
+  line-height: 14px;
+  margin-bottom: 29px;
+  color: #FFFFFF;
+}
+
+.main-intro__img {
+  margin-bottom: 3px;
+}
+
+.main-intro__link {
+  margin-bottom: 50px;
+  display: block;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  background-color: #F2F2F2;
+  width: 280px;
+  height: 266px;
+}
+
+.advantages__link {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.advantages__title {
+  font-size: 24px;
+  line-height: 37px;
+  margin-top: 50px;
+  margin-bottom: 29px;
+}
+
+.advantages__description {
+  font-family: "Lato", sans-serif;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 42px;
+}
+
+.work__losung {
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.work__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.work__item {
+  font-family: "Lato", sans-serif;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 22px;
+}
+
+.example {
+  background-color: #EAEAEA;
+}
+
+.example__losung {
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 78px;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  color: #444;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.example__item {
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 9px;
+}
+
+.example__desc {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.widget {
+  background-color: #EAEAEA;
+}
+
+.invitation {
+  background-color: #F2F2F2;
+}
+
+.invation__losung {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
+
+.invitation__adress {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444;
+}
+
+.index-footer {
+  background-color: #F2F2F2;
+}
+
+.copyright__text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444;
+}
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.social-networks {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 46px;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.catalog-container__losung {
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 60px;
+}
+
+.catalog-card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-card__link-title {
+  text-decoration: none;
+}
+
+.catalog-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #222;
+}
+
+.catalog-card__text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  color: #444;
+}
+
+.catalog-card__description {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  color: #222;
+}
+
+.catalog-card__link-product {
+  margin-top: 22px;
+}
+
+.catalog-card__tittle-next {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.catalog-card__description-next {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444;
+  margin-bottom: 21px;
+}
+
+.complate__tittle {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 49px;
+}
+
+.complate__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.comlate__name {
+  font-size: 16px;
+  line-height: 16px;
+  color: #222;
+  margin-bottom: 13px;
+}
+
+.complate__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.comlate__price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.complate__text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 241px;
+}
+
+.selection__losung {
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+.selection__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 39px;
+}
+
+.form__personal {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__personal-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.form__personal-item {
+  margin-bottom: 14px;
+}
+
+.form__personal-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444;
+}
+
+.form__select {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__select-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 22px;
+  margin-bottom: 45px;
+}
+
+.form__select-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222;
+}
+
+.form__contact {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__contact-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.form__contact-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.form__contact-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444;
+}
+
+.form__contact-item {
+  margin-bottom: 14px;
+}
+
+.form__comment-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 38px;
+}
+
+.form__additional {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__additional-title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 34px;
+}
+
+.form__additional-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.form__additional-item {
+  margin-bottom: 13px;
+}
+
+.form__additional-name {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__smaal {
+  margin-top: 21px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 32px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.main-container {
+  background-image: url("/img/index-background-desktop 2.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+}
+
+.comlatate__order {
+  background-image: url("/img/image-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 279px 289px;
+  width: 279px;
+  height: 289px;
+}
+/*# sourceMappingURL=style.css.map */
