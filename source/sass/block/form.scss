@@ -1,108 +1,153 @@
-.selection__losung{
-    font-size: 36px;
-    line-height: 36px;
-    margin-top: 27px;
-    margin-bottom: 37px;
-}
-.selection__description{
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 39px;
-}
-.form__personal{
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-.form__personal-list{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    margin-bottom: 24px;
-}
-.form__personal-item{
-    margin-bottom: 14px;
-}
-.form__personal-name{
-    font-size: 16px;
-    line-height: 18px;
-    color: #444;
-}
-.form__select{
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-.form__select-list{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    margin-top: 22px;
-    margin-bottom: 45px;
-}
-.form__select-name{
-    font-size: 16px;
-    line-height: 18px;
-    color: #222;
+.selection__losung {
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 37px;
 }
 
-.form__contact{
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-.form__contact-title{
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 35px;
-}
-.form__contact-list{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    margin-bottom: 24px;
-
-}
-.form__contact-name{
-    font-size: 16px;
-    line-height: 18px;
-    color: #444;
-}
-.form__contact-item{
-    margin-bottom: 14px;
-}
-.form__comment-title{
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 38px;
+.selection__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 39px;
+  text-transform: uppercase;
 }
 
-.form__additional{
-    margin: 0;
-    padding: 0;
-    border: none;
+.form__personal {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
-.form__additional-title{
-    font-size: 24px;
-    line-height: 26px;
-    margin-bottom: 34px;
-}
-.form__additional-list{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 40px;
-}
-.form__additional-item{
-    margin-bottom: 13px;
-}
-.form__additional-name{
-    font-size: 16px;
-    line-height: 18px;
 
+.form__personal-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 24px;
 }
-.form__smaal{
-    margin-top: 21px;
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 32px;
+
+.form__personal-item {
+  margin-bottom: 14px;
+}
+
+.form__personal-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__personal-input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__select {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__select-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 22px;
+  margin-bottom: 45px;
+}
+
+.form__select-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__contact {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__contact-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.form__contact-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.form__contact-name {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__contact-input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__contact-item {
+  margin-bottom: 14px;
+}
+
+.form__comment-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 38px;
+}
+
+.form__comment-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__additional {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__additional-title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 34px;
+}
+
+.form__additional-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.form__additional-item {
+  margin-bottom: 13px;
+}
+
+.form__additional-name {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__smaal {
+  margin-top: 21px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 32px;
 }

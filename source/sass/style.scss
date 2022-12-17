@@ -1,34 +1,17 @@
-// Начните писать стили здесь
-@use './components/fonts.scss';
-@use './components/visually-hidden.scss';
-@use './block/main-intro.scss';
-@use './block/advantages.scss';
-@use './block/work.scss';
-@use './block/exapmle.scss';
-@use './block/widget.scss';
-@use './block/invitation.scss';
-@use './block/index-footer.scss';
-@use './block/site-list.scss';
-@use './block/catalog-card.scss';
-@use './block/complate.scss';
-@use './block/form.scss';
 
-body{
-    font-family: "Oswald",sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000;
-    margin: 0;
-}
-.main-container{
-    background-image: url("/img/index-background-desktop\ 2.jpg");
-    background-repeat: no-repeat;
-    background-size: 320px 302px;
-}
-.comlatate__order{
-    background-image: url("/img/image-2.jpg");
-    background-repeat: no-repeat;
-    background-size: 279px 289px;
-    width: 279px;
-    height: 289px;
-}
+@import "components/fonts.scss";
+@import "components/visually-hidden.scss";
+@import "block/body.scss";
+@import "components/global.scss";
+@import "block/main-container.scss";
+@import "block/main-intro.scss";
+@import "block/advantages.scss";
+@import "block/work.scss";
+@import "block/exapmle.scss";
+@import "block/widget.scss";
+@import "block/invitation.scss";
+@import "block/index-footer.scss";
+@import "block/site-list.scss";
+@import "block/catalog-card.scss";
+@import "block/complate.scss";
+@import "block/form.scss";
