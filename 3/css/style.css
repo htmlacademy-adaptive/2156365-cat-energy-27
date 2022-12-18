@@ -2,21 +2,21 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/lato/Lato-Regular.woff2") format("woff22");
+  src: url("../../fonts/lato/lato-regular.woff2") format("woff2"), url("../../fonts/lato/lato-regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/oswald/oswaldregular.woff2") format("woff22");
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../../fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/oswald/oswaldmedium.woff2") format("woff22");
+  src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswald/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 .visully-hidden {
@@ -30,10 +30,44 @@
   overflow: hidden;
 }
 
+.page__body {
+  font-family: "Oswald", sans-serif;
+  line-height: 18px;
+  background-color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-image: url("../../img/index-background-desktop2.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+}
+
 .main-intro__title {
   font-size: 36px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 27px;
   margin-bottom: 25px;
 }
@@ -41,7 +75,8 @@
 .main-intro__text {
   line-height: 14px;
   margin-bottom: 29px;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .main-intro__img {
@@ -51,6 +86,7 @@
 .main-intro__link {
   margin-bottom: 50px;
   display: block;
+  text-transform: uppercase;
 }
 
 .advantages__list {
@@ -60,16 +96,17 @@
 }
 
 .advantages__item {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 280px;
   height: 266px;
 }
 
 .advantages__link {
-  color: #000;
+  color: #000000;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .advantages__title {
@@ -77,6 +114,7 @@
   line-height: 37px;
   margin-top: 50px;
   margin-bottom: 29px;
+  text-transform: uppercase;
 }
 
 .advantages__description {
@@ -107,7 +145,7 @@
 }
 
 .example {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .example__losung {
@@ -119,7 +157,7 @@
 
 .example__text {
   font-family: "Lato", sans-serif;
-  color: #444;
+  color: #444444;
   font-size: 14px;
   line-height: 18px;
 }
@@ -141,21 +179,22 @@
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 12px;
-  color: #444;
+  color: #444444;
   margin-bottom: 20px;
 }
 
 .example__description {
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .widget {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .invitation {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .invation__losung {
@@ -168,18 +207,20 @@
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #444;
+  color: #444444;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .index-footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .copyright__text {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: #444;
+  color: #444444;
 }
 
 .copyright__link {
@@ -203,11 +244,12 @@
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 46px;
+  text-transform: uppercase;
 }
 
 .site-list__link {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .catalog-container__losung {
@@ -215,6 +257,7 @@
   line-height: 36px;
   margin-top: 27px;
   margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .catalog-card__list {
@@ -230,7 +273,8 @@
 .catalog-card__title {
   font-size: 16px;
   line-height: 20px;
-  color: #222;
+  color: #222222;
+  text-transform: uppercase;
 }
 
 .catalog-card__text {
@@ -238,40 +282,43 @@
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 2px;
-  color: #444;
+  color: #444444;
 }
 
 .catalog-card__description {
   font-family: "Lato", sans-serif;
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 2px;
-  color: #222;
+  color: #222222;
 }
 
 .catalog-card__link-product {
   margin-top: 22px;
+  text-transform: uppercase;
 }
 
 .catalog-card__tittle-next {
   font-size: 16px;
   line-height: 20px;
-  color: #111;
+  color: #111111;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .catalog-card__description-next {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444;
+  color: #444444;
   margin-bottom: 21px;
 }
 
 .complate__tittle {
   font-size: 24px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   margin-top: 50px;
   margin-bottom: 49px;
 }
@@ -285,15 +332,16 @@
 .comlate__name {
   font-size: 16px;
   line-height: 16px;
-  color: #222;
+  color: #222222;
   margin-bottom: 13px;
+  text-transform: uppercase;
 }
 
 .complate__description {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: #444;
+  color: #444444;
   margin-bottom: 15px;
   font-weight: 400;
 }
@@ -303,7 +351,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #444;
+  color: #444444;
   margin-bottom: 15px;
 }
 
@@ -311,8 +359,16 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
   margin-top: 241px;
+}
+
+.comlatate__order {
+  background-image: url("../../img/image2.jpg");
+  background-repeat: no-repeat;
+  background-size: 279px 289px;
+  width: 279px;
+  height: 289px;
 }
 
 .selection__losung {
@@ -326,6 +382,7 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 39px;
+  text-transform: uppercase;
 }
 
 .form__personal {
@@ -348,7 +405,16 @@
 .form__personal-name {
   font-size: 16px;
   line-height: 18px;
-  color: #444;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__personal-input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
 }
 
 .form__select {
@@ -368,7 +434,8 @@
 .form__select-name {
   font-size: 16px;
   line-height: 18px;
-  color: #222;
+  color: #222222;
+  text-transform: uppercase;
 }
 
 .form__contact {
@@ -393,7 +460,16 @@
 .form__contact-name {
   font-size: 16px;
   line-height: 18px;
-  color: #444;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__contact-input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
 }
 
 .form__contact-item {
@@ -404,6 +480,14 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 38px;
+}
+
+.form__comment-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
 }
 
 .form__additional {
@@ -431,6 +515,7 @@
 .form__additional-name {
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .form__smaal {
@@ -438,27 +523,5 @@
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 32px;
-}
-
-body {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000000;
-  margin: 0;
-}
-
-.main-container {
-  background-image: url("/img/index-background-desktop 2.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
-}
-
-.comlatate__order {
-  background-image: url("/img/image-2.jpg");
-  background-repeat: no-repeat;
-  background-size: 279px 289px;
-  width: 279px;
-  height: 289px;
 }
 /*# sourceMappingURL=style.css.map */
