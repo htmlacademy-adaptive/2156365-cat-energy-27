@@ -1,5 +1,7 @@
 .index-footer {
   background-color: #f2f2f2;
+  width: 280px;
+
 }
 
 .copyright__text {
@@ -14,7 +16,40 @@
 }
 
 .social-networks {
-  margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  width: 132px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+
+.copyright__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.index-footer__logo {
+  margin: 0 auto;
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .index-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-footer {
+    width: 1220px;
+  }
 }

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
@@ -36,8 +37,9 @@
   <main class="main-form">
     <section class="selection">
       <h1 class="selection__losung">Подбор программы</h1>
-      <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="selection__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__flex">
         <fieldset class="form__personal">
           <legend class="visully-hidden">Персональные данные.
           </legend>
@@ -86,6 +88,7 @@
             </li>
           </ul>
         </fieldset>
+      </div>
         <fieldset class="form__contact">
           <legend class="form__contact-title">Контактные данные (владельца кота)</legend>
           <ul class="form__contact-list">
@@ -103,7 +106,7 @@
         </fieldset>
         <div class="form__comment">
           <label class="form__comment-title">Комментарий
-            <p><textarea class="form__comment-text" name="comment" cols="40" rows="3"
+            <p class="form__p"><textarea class="form__comment-text" name="comment" cols="40" rows="3"
               placeholder="Расскажите обо всех повадках кота"></textarea></p>
           </label>
         </div>

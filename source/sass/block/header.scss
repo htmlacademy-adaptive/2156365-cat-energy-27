@@ -1,0 +1,39 @@
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid red;
+}
+
+.main-header__logo {
+  width: 280px;
+  border: 3px solid green;
+  height: 38px;
+}
+
+.main-nav__list {
+  border: 3px solid green;
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    width: 174px;
+    height: 51px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    min-width: 440px;
+  }
+
+  .main-nav__toogle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    min-width: 1220px;
+  }
+}

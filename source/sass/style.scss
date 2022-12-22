@@ -1,8 +1,10 @@
 
 @import "components/fonts.scss";
+@import "components/Viewports.scss";
 @import "components/visually-hidden.scss";
-@import "block/body.scss";
 @import "components/global.scss";
+@import "block/body.scss";
+@import "block/header.scss";
 @import "block/main-container.scss";
 @import "block/main-intro.scss";
 @import "block/advantages.scss";
@@ -13,5 +15,6 @@
 @import "block/index-footer.scss";
 @import "block/site-list.scss";
 @import "block/catalog-card.scss";
+@import "block/card-next";
 @import "block/complate.scss";
 @import "block/form.scss";

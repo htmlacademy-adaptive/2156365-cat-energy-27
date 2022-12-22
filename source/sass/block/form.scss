@@ -1,8 +1,13 @@
+.main-form {
+  border: 3px solid green;
+}
+
 .selection__losung {
   font-size: 36px;
   line-height: 36px;
   margin-top: 27px;
   margin-bottom: 37px;
+  font-weight: 400;
 }
 
 .selection__description {
@@ -115,6 +120,12 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  margin-top: 38px;
+  margin-bottom: 23px;
+}
+
+.form__p {
+  margin: 0;
 }
 
 .form__additional {
@@ -150,4 +161,252 @@
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    width: 708px;
+  }
+
+  .form {
+    margin-bottom: 72px;
+  }
+
+  .selection__losung {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 65px;
+    margin-bottom: 54px;
+  }
+
+  .selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    text-transform: uppercase;
+  }
+
+  .form__personal-list {
+    width: 630px;
+    border: 3px solid yellow;
+    margin: 0;
+  }
+
+  .form__personal-item {
+    margin-bottom: 20px;
+  }
+
+  .form__personal-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__personal-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__select-list {
+    margin-top: 72px;
+    margin-bottom: 71px;
+    border: 3px solid gold;
+    width: 628px;
+    height: 200px;
+  }
+
+  .form__select-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form__contact-list {
+    margin-bottom: 65px;
+  }
+
+  .form__contact-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__comment-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__comment-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 76px;
+    margin-bottom: 65px;
+  }
+
+  .form__additional-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .form__additional-list {
+    border: 3px solid plum;
+    width: 533px;
+    display: grid;
+    grid-template-columns: 267px 267px;
+    list-style-type: none;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+
+  .form__additional-item {
+    margin: 0;
+  }
+
+  .form__additional-name {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__smaal {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    width: 1220px;
+  }
+
+  .form {
+    margin-bottom: 82px;
+  }
+
+  .selection__losung {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 77px;
+    margin-bottom: 56px;
+  }
+
+  .selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    text-transform: uppercase;
+  }
+
+  .form__personal-list {
+    width: 569px;
+    border: 3px solid yellow;
+    margin: 0;
+  }
+
+  .form__personal-item {
+    margin-bottom: 20px;
+  }
+
+  .form__personal-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__personal-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__select-list {
+    margin: 0;
+    width: 568px;
+    height: 200px;
+  }
+
+  .form__select-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  .form__contact-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form__contact-list {
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contact-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__comment-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__comment-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 76px;
+    margin-bottom: 67px;
+  }
+
+  .form__additional-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .form__additional-list {
+    border: 3px solid plum;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-bottom: 61px;
+  }
+
+  .form__additional-item {
+    margin: 0;
+  }
+
+  .form__additional-name {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__smaal {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 84px;
+  }
 }

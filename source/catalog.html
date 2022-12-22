@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
@@ -178,21 +179,21 @@
           </a>
         </li>
         <li class="catalog-card__item">
-          <a class="catalog-card__link" href="#">
+          <a class="catalog-card__link-img" href="#">
             <img src="img/catalog-pic7.png" width="72" height="84" alt="Товар Cat Energy PRO 500 г."></a>
           <a class="catalog-card__link-title" href="">
             <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
           </a>
           <dl class="catalog-card__column">
-            <div class="catalog-card__row-heft">
+            <div class="catalog-card__row">
               <dt class="catalog-card__text">Масса</dt>
               <dd class="catalog-card__description">500 г</dd>
             </div>
-            <div class="catalog-card__row-testy">
+            <div class="catalog-card__row">
               <dt class="catalog-card__text">Вкус</dt>
               <dd class="catalog-card__description">Рис</dd>
             </div>
-            <div class="catalog-card__row-price">
+            <div class="catalog-card__row">
               <dt class="catalog-card__text">Цена</dt>
               <dd class="catalog-card__description">700 ₽</dd>
             </div>
@@ -200,12 +201,12 @@
           <a class="catalog-card__link-product button" href="form.html">Заказать
           </a>
         </li>
-        <li class="catalog-card__item">
-          <a class="catalog-card__link-" href="#">
-            <h3 class="catalog-card__tittle-next">Показать еще 100500 товаров</h3>
+        <li class="catalog-card__item card-next">
+          <a class="card-next__link-" href="#">
+            <h3 class="card-next__tittle-next">Показать еще 100500 товаров</h3>
           </a>
-          <p class="catalog-card__description-next">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-card__link-all button" href="#">Показать все</a>
+          <p class="card-next__description-next">На самом деле вкусов гораздо больше!</p>
+          <a class="card-next__link-all button" href="#">Показать все</a>
         </li>
       </ul>
     </section>
@@ -213,28 +214,36 @@
       <h2 class="complate__tittle">Дополнительные товары</h2>
       <ul class="complate__list">
         <li class="complate__item">
-          <h3 class="comlate__name">Сахарозаменитель</h3>
+          <h3 class="complate__name">Сахарозаменитель</h3>
+          <div class="complate__flex">
           <span class="complate__description">1 упаковка (100 г)</span>
           <b class="comlate__price">200 ₽</b>
+        </div>
           <a class="complate__link button" href="form.html">Заказать
           </a>
         </li>
         <li class="complate__item">
-          <h3 class="comlate__name">Питьевая Вода</h3>
+          <h3 class="complate__name">Питьевая Вода</h3>
+          <div class="complate__flex">
           <span class="complate__description">5 литров</span>
           <b class="comlate__price">50 ₽</b>
+        </div>
           <a class="complate__link button" href="form.html">Заказать</a>
         </li>
         <li class="complate__item">
-          <h3 class="comlate__name">молоко</h3>
+          <h3 class="complate__name">молоко</h3>
+          <div class="complate__flex">
           <span class="complate__description">1 литр</span>
           <b class="comlate__price">100 ₽</b>
+        </div>
           <a class="complate__link button" href="form.html">Заказать</a>
         </li>
         <li class="complate__item">
-          <h3 class="comlate__name">витамины</h3>
+          <h3 class="complate__name">витамины</h3>
+          <div class="complate__flex">
           <span class="complate__description">1 упаковка (30 г)</span>
           <b class="comlate__price">300 ₽</b>
+        </div>
           <a class="complate__link button" href="form.html">Заказать</a>
         </li>
       </ul>
@@ -298,6 +307,7 @@
       <section class="copyright">
         <h2 class="visully-hidden">Ааторские права магазина HTML Academy.</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="copyright__flex">
           <span class="copyright__text copyright__text--copyright">HTML Academy</span>
           <svg class="copyright__logo " aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,6 +315,7 @@
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
               fill="#666666" />
           </svg>
+          </div>
         </a>
       </section>
     </section>
