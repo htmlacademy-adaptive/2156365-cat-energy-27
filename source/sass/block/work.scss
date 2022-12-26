@@ -1,14 +1,15 @@
 .work {
-  border: 3px solid purple;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .work__losung {
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
   margin-top: 42px;
   margin-bottom: 42px;
-  font-weight: 400;
 }
 
 .work__list {
@@ -22,10 +23,13 @@
   line-height: 18px;
   color: #444444;
   margin-bottom: 22px;
-  border: 3px solid gray;
 }
 
 @media (min-width: $tablet-width) {
+  .work {
+    width: 708px;
+  }
+
   .work__losung {
     font-size: 60px;
     line-height: 60px;
@@ -52,6 +56,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .work {
+    width: 1220px;
+  }
+
   .work__losung {
     font-size: 60px;
     line-height: 60px;

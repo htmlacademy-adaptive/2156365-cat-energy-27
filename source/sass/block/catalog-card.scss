@@ -1,4 +1,5 @@
 .catalog-container__losung {
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   margin-top: 27px;
@@ -7,8 +8,8 @@
 }
 
 .catalog-container {
-  width: 320px;
-  border: 3px solid red;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .catalog-card__list {
@@ -43,6 +44,7 @@
 
 .catalog-card__title {
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   color: #222222;
   text-transform: uppercase;
@@ -53,6 +55,7 @@
 .catalog-card__description {
   font-family: "Lato", sans-serif;
   margin: 0;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 2px;
@@ -67,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-container {
-    width: 768px;
+    width: 708px;
   }
 
   .catalog-container__losung {
@@ -81,20 +84,19 @@
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 60px;
-    border: 3px solid yellow;
   }
 
   .catalog-card__item {
     width: 324px;
     height: 511px;
-    border: 3px solid black;
   }
-
 }
+
 @media (min-width: $desktop-width) {
   .catalog-container {
     width: 1220px;
   }
+
   .catalog-container__losung {
     margin-top: 78px;
     margin-bottom: 84px;
@@ -104,13 +106,11 @@
     display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 60px;
-    border: 3px solid yellow;
   }
 
   .catalog-card__item {
     width: 245px;
     height: 511px;
-    border: 3px solid black;
     display: flex;
     flex-direction: column;
   }

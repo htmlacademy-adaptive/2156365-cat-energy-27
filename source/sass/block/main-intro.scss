@@ -1,8 +1,11 @@
 .main-intro {
-  border: 3px solid blue;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main-intro__title {
+  margin: 0;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -11,6 +14,8 @@
 }
 
 .main-intro__text {
+  margin: 0;
+  font-weight: 400;
   line-height: 14px;
   margin-bottom: 29px;
   color: #ffffff;
@@ -29,9 +34,8 @@
 @media (min-width: $tablet-width) {
   .main-intro {
     position: relative;
-    min-width: 709px;
+    width: 708px;
     height: 872px;
-    border: 3px solid blue;
     background-color: #ffffff;
   }
 
@@ -70,7 +74,7 @@
 
 @media (min-width: $desktop-width) {
   .main-intro {
-    min-width: 1220px;
+    width: 1220px;
     position: relative;
     height: 613px;
   }

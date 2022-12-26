@@ -1,16 +1,20 @@
 .main-form {
-  border: 3px solid green;
+  border: 3px solid gree;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .selection__losung {
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
   margin-top: 27px;
   margin-bottom: 37px;
   font-weight: 400;
 }
 
 .selection__description {
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 39px;
@@ -79,6 +83,8 @@
 .form__contact-title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+  margin: 0;
   margin-bottom: 35px;
 }
 
@@ -124,10 +130,6 @@
   margin-bottom: 23px;
 }
 
-.form__p {
-  margin: 0;
-}
-
 .form__additional {
   margin: 0;
   padding: 0;
@@ -144,6 +146,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .form__additional-item {
@@ -188,7 +191,6 @@
 
   .form__personal-list {
     width: 630px;
-    border: 3px solid yellow;
     margin: 0;
   }
 
@@ -209,7 +211,6 @@
   .form__select-list {
     margin-top: 72px;
     margin-bottom: 71px;
-    border: 3px solid gold;
     width: 628px;
     height: 200px;
   }
@@ -258,7 +259,6 @@
   }
 
   .form__additional-list {
-    border: 3px solid plum;
     width: 533px;
     display: grid;
     grid-template-columns: 267px 267px;
@@ -310,7 +310,6 @@
 
   .form__personal-list {
     width: 569px;
-    border: 3px solid yellow;
     margin: 0;
   }
 
@@ -386,15 +385,13 @@
   }
 
   .form__additional-list {
-    border: 3px solid plum;
-    display: flex;
-    justify-content: space-between;
     width: 1200px;
-    margin-bottom: 61px;
+    grid-template-columns: repeat(4, 300px);
   }
 
   .form__additional-item {
     margin: 0;
+    min-width: 200px;
   }
 
   .form__additional-name {

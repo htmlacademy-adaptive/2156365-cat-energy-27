@@ -1,18 +1,30 @@
+.example__grid-desctop {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example {
   background-color: #eaeaea;
-  border: 3px solid yellow;
+  margin: 0 auto;
+}
+
+.example__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__losung {
+  margin: 0;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
   margin-top: 25px;
-  font-weight: 400;
 }
 
 .example__text {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: #444444;
   font-size: 14px;
   line-height: 18px;
@@ -57,12 +69,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example__grid-desctop {
+    width: 708px;
+  }
+
+  .example {
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+
   .example__losung {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
     margin-top: 43px;
     font-weight: 400;
+  }
+
+  .example__container {
+    width: 708px;
   }
 
   .example__text {
@@ -116,12 +141,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example__grid-desctop {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 610px 610px;
+  }
+
   .example__losung {
     font-size: 60px;
     line-height: 60px;
     margin: 0;
     margin-bottom: 146px;
     font-weight: 400;
+  }
+
+  .example__container {
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .example__text {

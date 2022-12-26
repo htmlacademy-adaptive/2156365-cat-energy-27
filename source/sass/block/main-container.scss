@@ -1,18 +1,5 @@
 .main-container {
-  background-image: url("../../img/index-background-desktop2.jpg");
+  background-image: url("../img/index-background-desktop2.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
-  width: 320px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-container {
-    width: 708px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-container {
-    width: 1400px;
-  }
 }
