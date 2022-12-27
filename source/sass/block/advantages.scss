@@ -1,19 +1,22 @@
 .advantages {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-top: 20px;
 }
 
 .advantages__item {
   background-color: #f2f2f2;
   width: 280px;
-  height: 266px;
-  margin-top: 20px;
+  min-height: 266px;
+  margin-bottom: 20px;
+  padding: 30px 33px 18px 20px;
 }
 
 .advantages__link {
@@ -31,7 +34,7 @@
   line-height: 37px;
   margin-bottom: 29px;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-left: 79px;
 }
 
 .advantages__description {
@@ -46,24 +49,26 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: 708px;
+    padding-bottom: 15px;
   }
+
 
   .advantages__item {
     background-color: #f2f2f2;
     width: 708px;
-    height: 372px;
+    min-height: 372px;
     margin: 0;
     margin-bottom: 30px;
+    padding: 77px 316px 53px 53px;
   }
 
   .advantages__title {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
+    padding: 0;
     margin-bottom: 24px;
     text-transform: uppercase;
-    padding-top: 77px;
-    padding-left: 53px;
   }
 
   .advantages__description {
@@ -72,7 +77,6 @@
     line-height: 24px;
     color: #444444;
     width: 340px;
-    padding-left: 53px;
     padding-bottom: 52px;
     margin: 0;
   }
@@ -83,14 +87,13 @@
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
-    padding-bottom: 57px;
-    padding-left: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
     width: 1220px;
+    padding-bottom: 69px;
   }
 
   .advantages__list {
@@ -104,8 +107,9 @@
   .advantages__item {
     background-color: #f2f2f2;
     width: 570px;
-    height: 374px;
+    min-height: 374px;
     margin: 0;
+    padding: 77px 61px 55px 52px;
   }
 
   .advantages__title {
@@ -113,8 +117,8 @@
     line-height: 36px;
     margin: 0;
     text-transform: uppercase;
-    padding-top: 73px;
-    padding-left: 214px;
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   .advantages__description {
@@ -122,8 +126,6 @@
     font-size: 16px;
     line-height: 24px;
     color: #444444;
-    padding-top: 73px;
-    padding-left: 52px;
     padding-bottom: 27px;
     min-width: 457px;
     margin: 0;
@@ -135,7 +137,5 @@
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
-    padding-bottom: 55px;
-    padding-left: 52px;
   }
 }

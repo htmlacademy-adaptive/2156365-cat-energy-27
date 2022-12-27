@@ -3,9 +3,14 @@
   line-height: 24px;
   color: #000000;
   margin: 0;
-  margin-top: 50px;
   margin-bottom: 49px;
   font-weight: 400;
+  padding-top: 50px;
+}
+
+.complate__wrapp {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .complate__list {
@@ -78,9 +83,13 @@
     line-height: 24px;
     color: #000000;
     margin: 0;
-    margin-top: 68px;
     margin-bottom: 80px;
     font-weight: 400;
+    padding-top: 68px;
+  }
+
+  .complate__wrapp {
+    width: 708px;
   }
 
   .complate__name {
@@ -140,7 +149,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .complate {
+  .complate__wrapp {
+    width: 1220px;
     display: grid;
     grid-template-columns: 896px 246px;
     column-gap: 80px;
@@ -149,6 +159,7 @@
   .complate__list {
     width: 896px;
     min-height: 288px;
+    grid-column: 1/2;
   }
 
   .complate__tittle {
@@ -156,10 +167,9 @@
     line-height: 36px;
     color: #000000;
     margin: 0;
-    margin-top: 75px;
+    padding-top: 75px;
     margin-bottom: 81px;
     font-weight: 400;
-    grid-column: 1/-1;
   }
 
   .complate__item {
@@ -194,7 +204,6 @@
     height: 288px;
     margin: 0;
     grid-column: 2/3;
-    grid-row: 2/3;
   }
 
   .complate__text {

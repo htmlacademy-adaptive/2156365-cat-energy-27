@@ -36,9 +36,12 @@
   </header>
   <main class="main-form">
     <section class="selection">
+      <div class="selection__wrapp wrapp">
       <h1 class="selection__losung">Подбор программы</h1>
       <p class="selection__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__wrapp wrapp">
         <div class="form__flex">
         <fieldset class="form__personal">
           <legend class="visully-hidden">Персональные данные.
@@ -64,7 +67,7 @@
         <fieldset class="form__select">
           <legend class="visully-hidden">Выбрать программу.
           </legend>
-          <ul class="form__select-list">
+          <ul class="form__select-list wrapp">
             <li class="form__select-item">
               <label class="form__select-control">
                 <input class="form__select-input" type="radio" name="program" value="minus" checked>
@@ -89,9 +92,11 @@
           </ul>
         </fieldset>
       </div>
+    </div>
         <fieldset class="form__contact">
           <legend class="form__contact-title">Контактные данные (владельца кота)</legend>
-          <ul class="form__contact-list">
+          <div class="form__contact-wrapp wrapp">
+          <ul class="form__contact-list wrapp">
             <li class="form__contact-item">
               <label class="form__contact-name">E-mail:*
                 <input class="form__contact-input" type="email" name="emial" value="кuklachev@gmail.com">
@@ -103,14 +108,17 @@
               </label>
             </li>
           </ul>
+        </div>
         </fieldset>
         <div class="form__comment">
           <label class="form__comment-title" for="comment">Комментарий</label>
+          <div class="form__comment-wrap wrapp">
             <textarea class="form__comment-text" id="comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
-
+          </div>
         </div>
         <fieldset class="form__additional">
           <legend class="form__additional-title">Дополнително</legend>
+          <div class="form__additational-wrapp wrapp">
           <ul class="form__additional-list">
             <li class="form__additional-item">
               <label class="form__additional-control">
@@ -141,9 +149,12 @@
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
+        <div class="form__wrapp wrapp">
         <button class="form__button-submit button-form" type="submit">Оправить заявку</button>
         <small class="form__smaal">* — Обязательные поля</small>
+        </div>
       </form>
     </section>
   </main>
@@ -157,6 +168,7 @@
       <iframe></iframe>
     </section>
     <section class="index-footer">
+      <div class="index-footer__container">
       <h2 class="visully-hidden">О нас.</h2>
       <a class="index-footer__link-logo" href="index.html">
         <img class="index-footer__logo" src="img/footer-logo.svg" width="128" height="24"
@@ -197,7 +209,6 @@
           </a>
         </li>
       </ul>
-
       <section class="copyright">
         <h2 class="visully-hidden">Ааторские права магазина HTML Academy.</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -210,6 +221,7 @@
           </svg>
         </a>
       </section>
+      </div>
     </section>
   </footer>
 

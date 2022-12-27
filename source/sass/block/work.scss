@@ -8,14 +8,13 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  margin-top: 42px;
-  margin-bottom: 42px;
 }
 
 .work__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-bottom: 49px;
 }
 
 .work__item {
@@ -33,7 +32,6 @@
   .work__losung {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
     margin-bottom: 72px;
     font-weight: 400;
   }
@@ -44,6 +42,7 @@
     grid-template-rows: 280px 280px;
     column-gap: 153px;
     row-gap: 37px;
+    padding-bottom: 47px;
   }
 
   .work__item {
@@ -52,6 +51,7 @@
     font-size: 16px;
     color: #444444;
     margin-bottom: 22px;
+    min-height: 230px;
   }
 }
 
@@ -63,7 +63,6 @@
   .work__losung {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
     margin-bottom: 72px;
     font-weight: 400;
   }

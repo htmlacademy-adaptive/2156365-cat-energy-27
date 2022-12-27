@@ -1,16 +1,10 @@
-.main-form {
-  border: 3px solid gree;
-  width: 280px;
-  margin: 0 auto;
-}
-
 .selection__losung {
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  margin-top: 27px;
   margin-bottom: 37px;
   font-weight: 400;
+  padding-top: 27px;
 }
 
 .selection__description {
@@ -167,10 +161,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-form {
-    width: 708px;
-  }
-
   .form {
     margin-bottom: 72px;
   }
@@ -178,8 +168,8 @@
   .selection__losung {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 65px;
     margin-bottom: 54px;
+    padding-top: 65px;
   }
 
   .selection__description {
@@ -286,10 +276,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-form {
-    width: 1220px;
-  }
-
   .form {
     margin-bottom: 82px;
   }
@@ -297,8 +283,8 @@
   .selection__losung {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 77px;
     margin-bottom: 56px;
+    padding-top: 77px;
   }
 
   .selection__description {

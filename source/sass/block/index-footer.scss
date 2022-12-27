@@ -1,5 +1,8 @@
 .index-footer {
   background-color: #f2f2f2;
+}
+
+.index-footer__container {
   width: 280px;
   margin: 0 auto;
 }
@@ -37,16 +40,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .index-footer {
+  .index-footer__container {
+    width: 708px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 708px;
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+
+  .social-networks {
+    padding: 0;
+  }
+
+  .index-footer__logo {
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .index-footer {
+  .index-footer__container {
     width: 1220px;
+    padding-top: 57px;
+    padding-bottom: 58px;
   }
 }

@@ -19,7 +19,7 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .example__text {
@@ -82,8 +82,8 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
-    margin-top: 43px;
     font-weight: 400;
+    padding-top: 43px;
   }
 
   .example__container {
@@ -152,13 +152,18 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    margin-bottom: 146px;
+    padding: 0;
     font-weight: 400;
+    margin-bottom: 146px;
   }
 
   .example__container {
-    width: 1220px;
-    margin: 0 auto;
+    margin: 0;
+    width: 436px;
+  }
+
+  .example {
+    margin: 0;
   }
 
   .example__text {

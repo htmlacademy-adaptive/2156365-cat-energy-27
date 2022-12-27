@@ -1,0 +1,18 @@
+.wrapp {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapp {
+    margin: 0 auto;
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapp {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
