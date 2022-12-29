@@ -1,0 +1,23 @@
+.living {
+  background-color: #eaeaea;
+}
+
+.living__grid-desctop {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .living__grid-desctop {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living__grid-desctop {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 610px 610px;
+  }
+}

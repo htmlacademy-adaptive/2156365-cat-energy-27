@@ -31,13 +31,14 @@
 @media (min-width: $tablet-width) {
   .card-next {
     width: 324px;
-    min-height: 511px;
+    min-height: 429px;
     display: grid;
     grid-template-columns: 36px 252px 36px;
-    grid-template-rows: 161px 47px auto 40px 39px;
-    background-color: #ffffff;
+    grid-template-rows: 161px min-content auto min-content 39px;
+    background: none;
     border: 2px solid #f2f2f2;
     padding: 0;
+    margin-top: 82px;
   }
 
   .card-next__tittle-next {
@@ -82,6 +83,6 @@
   .card-next {
     width: 245px;
     grid-template-columns: 38px 169px 38px;
-    grid-template-rows: 161px 47px auto 40px 39px;
+    grid-template-rows: 160px min-content auto min-content 39px;
   }
 }

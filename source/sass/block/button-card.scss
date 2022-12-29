@@ -1,21 +1,27 @@
-.button-link {
+.button-card {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   display: block;
-  padding: 7px 5px;
+  padding: 10px 10px;
+  width: 100%;
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
   cursor: pointer;
+  border: 0;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
-  .button-link {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 14px 26px;
+  .button-card {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-card {
+    padding: 10px 10px;
   }
 }
