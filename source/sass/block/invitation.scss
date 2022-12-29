@@ -1,18 +1,57 @@
 .invitation {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
+  height: 112px;
+  display: flex;
 }
 
 .invation__losung {
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  font-weight: 400;
+  margin: 0;
 }
 
 .invitation__adress {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
   font-style: normal;
-  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .invitation {
+    width: 708px;
+    height: 199px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .invation__losung {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 60px;
+    margin-bottom: 55px;
+    width: 172px;
+  }
+
+  .invitation__adress {
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-bottom: 55px;
+    width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .invitation {
+    width: 565px;
+    height: 198px;
+  }
 }

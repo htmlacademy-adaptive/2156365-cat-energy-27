@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
@@ -35,25 +36,32 @@
   </header>
   <main class="main-form">
     <section class="selection">
+      <div class="selection__wrapp wrapp">
       <h1 class="selection__losung">Подбор программы</h1>
-      <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="selection__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__wrapp wrapp">
+        <div class="form__flex">
         <fieldset class="form__personal">
           <legend class="visully-hidden">Персональные данные.
           </legend>
           <ul class="form__personal-list">
             <li class="form__personal-item">
-              <label class="form__personal-name">Имя:*
+              <label class="form__personal-name">
+                <span class="form__personal-text">Имя:*</span>
                 <input class="form__personal-input" type="text" name="name" value="Барсик">
               </label>
             </li>
             <li class="form__personal-item">
-              <label class="form__personal-name">Вес (кг):*
+              <label class="form__personal-name">
+                <span class="form__personal-text">Вес (кг):*</span>
                 <input class="form__personal-input" type="text" name="heft" value="7">
               </label>
             </li>
             <li class="form__personal-item">
-              <label class="form__personal-name">Возраст (лет):
+              <label class="form__personal-name">
+                <span class="form__personal-text">Возраст (лет):</span>
                 <input class="form__personal-input" type="text" name="day" value="7">
               </label>
             </li>
@@ -62,7 +70,7 @@
         <fieldset class="form__select">
           <legend class="visully-hidden">Выбрать программу.
           </legend>
-          <ul class="form__select-list">
+          <ul class="form__select-list wrapp">
             <li class="form__select-item">
               <label class="form__select-control">
                 <input class="form__select-input" type="radio" name="program" value="minus" checked>
@@ -86,29 +94,51 @@
             </li>
           </ul>
         </fieldset>
+      </div>
+    </div>
         <fieldset class="form__contact">
-          <legend class="form__contact-title">Контактные данные (владельца кота)</legend>
+          <legend class="visully-hidden">Контактные данные (владельца кота)</legend>
+          <div class="form__line line">
+            <div class="line__container">
+          <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
+            </div>
+          </div>
+          <div class="form__contact-wrapp wrapp">
           <ul class="form__contact-list">
             <li class="form__contact-item">
-              <label class="form__contact-name">E-mail:*
+              <label class="form__contact-name">
+                <span class="form__contact-text">E-mail:*</span>
                 <input class="form__contact-input" type="email" name="emial" value="кuklachev@gmail.com">
               </label>
             </li>
             <li class="form__contact-item">
-              <label class="form__contact-name">Телефон:*
+              <label class="form__contact-name">
+                <span class="form__contact-text">Телефон:*</span>
                 <input class="form__contact-input" type="tel" name="tell" value="8 (960) 900-60-90">
               </label>
             </li>
           </ul>
+        </div>
         </fieldset>
         <div class="form__comment">
-          <label class="form__comment-title">Комментарий
-            <p><textarea class="form__comment-text" name="comment" cols="40" rows="3"
-              placeholder="Расскажите обо всех повадках кота"></textarea></p>
-          </label>
+          <label class="visully-hidden" for="comment">Комментарий</label>
+          <div class="form__line line">
+            <div class="line__container">
+          <h2 class="form__comment-title">Комментарий</h2>
+            </div>
+          </div>
+          <div class="form__comment-wrap wrapp">
+            <textarea class="form__comment-text" id="comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </div>
         <fieldset class="form__additional">
-          <legend class="form__additional-title">Дополнително</legend>
+          <legend class="visully-hidden">Дополнително</legend>
+          <div class="form__line line">
+            <div class="line__container">
+          <h2 class="form__additional-title">Дополнително</h2>
+            </div>
+          </div>
+          <div class="form__additational-wrapp wrapp">
           <ul class="form__additional-list">
             <li class="form__additional-item">
               <label class="form__additional-control">
@@ -139,9 +169,12 @@
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
-        <button class="form__button-submit" type="submit">Оправить заявку</button>
+        <div class="form__wrapp wrapp">
+        <button class="form__button-submit button-form" type="submit">Оправить заявку</button>
         <small class="form__smaal">* — Обязательные поля</small>
+        </div>
       </form>
     </section>
   </main>
@@ -155,6 +188,7 @@
       <iframe></iframe>
     </section>
     <section class="index-footer">
+      <div class="index-footer__container">
       <h2 class="visully-hidden">О нас.</h2>
       <a class="index-footer__link-logo" href="index.html">
         <img class="index-footer__logo" src="img/footer-logo.svg" width="128" height="24"
@@ -195,7 +229,6 @@
           </a>
         </li>
       </ul>
-
       <section class="copyright">
         <h2 class="visully-hidden">Ааторские права магазина HTML Academy.</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -208,6 +241,7 @@
           </svg>
         </a>
       </section>
+      </div>
     </section>
   </footer>
 

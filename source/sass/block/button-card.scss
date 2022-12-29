@@ -1,0 +1,27 @@
+.button-card {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  padding: 10px 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #68b738;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .button-card {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-card {
+    padding: 10px 10px;
+  }
+}

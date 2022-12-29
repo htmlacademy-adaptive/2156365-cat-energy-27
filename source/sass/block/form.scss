@@ -1,11 +1,14 @@
 .selection__losung {
   font-size: 36px;
   line-height: 36px;
-  margin-top: 27px;
+  margin: 0;
   margin-bottom: 37px;
+  font-weight: 400;
+  padding-top: 27px;
 }
 
 .selection__description {
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 39px;
@@ -30,10 +33,17 @@
 }
 
 .form__personal-name {
+  display: flex;
+}
+
+.form__personal-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  align-self: center;
 }
 
 .form__personal-input {
@@ -42,6 +52,12 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  flex-grow: 2;
+  border: 1px solid #e7e7e7;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  margin-left: 13px;
 }
 
 .form__select {
@@ -74,6 +90,8 @@
 .form__contact-title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+  margin: 0;
   margin-bottom: 35px;
 }
 
@@ -85,10 +103,16 @@
 }
 
 .form__contact-name {
+  display: flex;
+}
+
+.form__contact-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  align-self: center;
 }
 
 .form__contact-input {
@@ -97,6 +121,12 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  flex-grow: 2;
+  padding-left: 15px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  margin-left: 10px;
+  border: 1px solid #e7e7e7;
 }
 
 .form__contact-item {
@@ -104,9 +134,10 @@
 }
 
 .form__comment-title {
+  margin: 0;
   font-size: 24px;
-  line-height: 24px;
-  margin-bottom: 38px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .form__comment-text {
@@ -115,6 +146,13 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 10px;
+  height: 150px;
+  margin-bottom: 23px;
+  margin-top: 38px;
+  border: 1px solid #e7e7e7;
 }
 
 .form__additional {
@@ -133,6 +171,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .form__additional-item {
@@ -150,4 +189,243 @@
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin-bottom: 72px;
+  }
+
+  .selection__losung {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding-top: 65px;
+  }
+
+  .selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    text-transform: uppercase;
+  }
+
+  .form__personal-list {
+    width: 630px;
+    margin: 0;
+  }
+
+  .form__personal-item {
+    margin-bottom: 20px;
+  }
+
+  .form__personal-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__personal-input {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .form__select-list {
+    margin-top: 72px;
+    margin-bottom: 71px;
+    width: 628px;
+    height: 200px;
+  }
+
+  .form__select-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form__contact-list {
+    margin-bottom: 65px;
+  }
+
+  .form__contact-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__comment-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__comment-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 76px;
+    margin-bottom: 65px;
+    padding-left: 19px;
+    height: 174px;
+  }
+
+  .form__additional-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .form__additional-list {
+    width: 533px;
+    display: grid;
+    grid-template-columns: 267px 267px;
+    list-style-type: none;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+
+  .form__additional-item {
+    margin: 0;
+  }
+
+  .form__additional-name {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__smaal {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 82px;
+  }
+
+  .selection__losung {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 56px;
+    padding-top: 77px;
+  }
+
+  .selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    text-transform: uppercase;
+  }
+
+  .form__personal-list {
+    width: 569px;
+    margin: 0;
+  }
+
+  .form__personal-item {
+    margin-bottom: 20px;
+  }
+
+  .form__personal-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__personal-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__select-list {
+    margin: 0;
+    width: 568px;
+    height: 200px;
+  }
+
+  .form__select-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  .form__contact-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form__contact-list {
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contact-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contact-name {
+    font-size: 20px;
+    line-height: 30px;
+    width: 571px;
+  }
+
+  .form__comment-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__comment-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 76px;
+    margin-bottom: 67px;
+  }
+
+  .form__additional-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .form__additional-list {
+    width: 1200px;
+    grid-template-columns: repeat(4, 300px);
+  }
+
+  .form__additional-item {
+    margin: 0;
+    min-width: 200px;
+  }
+
+  .form__additional-name {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__smaal {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 84px;
+  }
 }
