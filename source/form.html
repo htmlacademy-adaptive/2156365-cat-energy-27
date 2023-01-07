@@ -16,8 +16,8 @@
       <img class="main-header__logo-paint" src="img/logo-header-paint.svg" width="110" height="18"
         alt="Логотип надпись сайта кот-энержи.">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toogle">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visully-hidden">Открыть меню.
         </span>
       </button>
@@ -179,14 +179,17 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="invitation">
-      <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="invitation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </section>
-    <section class="map">
-      <h2 class="visully-hidden">Магазин кот-энержи на карте.</h2>
-      <iframe></iframe>
-    </section>
+    <div class="map-wrapp">
+      <section class="invitation invitation--color">
+        <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="invitation__adress">ул. Большая
+          Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <section class="map">
+        <h2 class="visully-hidden">Магазин кот-энержи на карте.</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1673035303683!5m2!1sru!2sru"  allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+      </section>
+    </div>
     <section class="index-footer">
       <div class="index-footer__container">
       <h2 class="visully-hidden">О нас.</h2>
@@ -245,7 +248,7 @@
     </section>
   </footer>
 
-
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

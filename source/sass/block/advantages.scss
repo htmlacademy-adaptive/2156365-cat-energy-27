@@ -17,6 +17,29 @@
   min-height: 266px;
   margin-bottom: 20px;
   padding: 30px 33px 18px 20px;
+  position: relative;
+}
+
+.advantages__item--img1::after {
+  content: "";
+  background-image: url("../../img/advantages-cat1.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 50px;
+  top: 22px;
+  left: 21px;
+}
+
+.advantages__item--img2::after {
+  content: "";
+  background-image: url("../../img/advantages-cat2.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 67px;
+  top: 24px;
+  left: 13px;
 }
 
 .advantages__link {
@@ -46,6 +69,22 @@
   margin-bottom: 42px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .advantages__item {
+    position: relative;
+  }
+
+  .advantages__item::before {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 209px;
+    left: 20px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     width: 708px;
@@ -60,6 +99,28 @@
     margin: 0;
     margin-bottom: 30px;
     padding: 77px 316px 53px 53px;
+  }
+
+  .advantages__item--img1::after {
+    content: "";
+    background-image: url("../../img/advantages-table-cat1.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 211px;
+    width: 200px;
+    top: 81px;
+    left: 446px;
+  }
+
+  .advantages__item--img2::after {
+    content: "";
+    background-image: url("../../img/advantages-table-cat2.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 265px;
+    top: 91px;
+    left: 412px;
   }
 
   .advantages__title {
@@ -110,6 +171,28 @@
     min-height: 374px;
     margin: 0;
     padding: 77px 61px 55px 52px;
+  }
+
+  .advantages__item--img1::after {
+    content: "";
+    background-image: url("../../img/advantages-desk-cat1.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 106px;
+    width: 100px;
+    top: 41px;
+    left: 52px;
+  }
+
+  .advantages__item--img2::after {
+    content: "";
+    background-image: url("../../img/advantages-desk-cat2.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 134px;
+    top: 42px;
+    left: 33px;
   }
 
   .advantages__title {

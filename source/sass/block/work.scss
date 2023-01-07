@@ -15,6 +15,7 @@
   padding: 0;
   list-style-type: none;
   padding-bottom: 49px;
+  margin-top: 40px;
 }
 
 .work__item {
@@ -22,6 +23,52 @@
   line-height: 18px;
   color: #444444;
   margin-bottom: 22px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.work__item--pic1::after {
+  content: "";
+  background-image: url(../../img/work-pic1.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
+}
+
+.work__item--pic2::after {
+  content: "";
+  background-image: url(../../img/work-pic2.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
+}
+
+.work__item--pic3::after {
+  content: "";
+  background-image: url(../../img/work-pic3.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
+}
+
+.work__item--pic4::after {
+  content: "";
+  background-image: url(../../img/work-pic4.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +79,7 @@
   .work__losung {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 37px;
     font-weight: 400;
   }
 
@@ -43,6 +90,7 @@
     column-gap: 153px;
     row-gap: 37px;
     padding-bottom: 47px;
+    margin: 0;
   }
 
   .work__item {
@@ -50,8 +98,42 @@
     line-height: 24px;
     font-size: 16px;
     color: #444444;
+    padding: 0;
+    padding-top: 151px;
     margin-bottom: 22px;
     min-height: 230px;
+  }
+
+  .work__item--pic1::after {
+    background-image: url(../../img/work-table-pic1.png);
+    height: 80px;
+    width: 80px;
+    top: 40px;
+    left: 0;
+  }
+
+  .work__item--pic2::after {
+    background-image: url(../../img/work-table-pic2.png);
+    height: 80px;
+    width: 80px;
+    top: 40px;
+    left: 0;
+  }
+
+  .work__item--pic3::after {
+    background-image: url(../../img/work-table-pic3.png);
+    height: 80px;
+    width: 80px;
+    top: 40px;
+    left: 0;
+  }
+
+  .work__item--pic4::after {
+    background-image: url(../../img/work-table-pic4.png);
+    height: 80px;
+    width: 80px;
+    top: 40px;
+    left: 0;
   }
 }
 
@@ -63,7 +145,7 @@
   .work__losung {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
     font-weight: 400;
   }
 

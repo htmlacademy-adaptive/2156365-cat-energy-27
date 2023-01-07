@@ -3,8 +3,13 @@
   line-height: 24px;
   color: #000000;
   margin: 0;
-  margin-bottom: 49px;
   font-weight: 400;
+  display: inline-block;
+  width: 247px;
+  background-color: #ffffff;
+}
+
+.comlatate {
   padding-top: 50px;
 }
 
@@ -17,6 +22,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-top: 36px;
 }
 
 .complate__name {
@@ -60,12 +66,24 @@
 }
 
 .comlatate__order {
-  background-image: url("../img/image2.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/image2.jpg");
   background-repeat: no-repeat;
   background-size: 279px 289px;
   width: 279px;
   height: 289px;
   margin-top: 35px;
+  position: relative;
+}
+
+.comlatate__order::before {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 80px;
+  top: 59px;
+  left: 101px;
+  background-image: url("../../img/icon_gift1.png");
+  z-index: 1;
 }
 
 .complate__text {
@@ -75,21 +93,30 @@
   color: #ffffff;
   margin: 0;
   padding-top: 186px;
+  width: 161px;
+  margin-left: 58px;
+  text-align: center;
 }
+
 
 @media (min-width: $tablet-width) {
   .complate__tittle {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 36px;
     color: #000000;
     margin: 0;
-    margin-bottom: 80px;
     font-weight: 400;
+    width: 418px;
+    padding: 0 36px;
+  }
+
+  .comlatate {
     padding-top: 68px;
   }
 
   .complate__wrapp {
     width: 708px;
+    margin-top: 80px;
   }
 
   .complate__name {
@@ -140,11 +167,15 @@
     width: 707px;
     height: 200px;
     margin-top: 69px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/imagetable2.png");
   }
 
   .complate__text {
+    margin: 0;
     padding-top: 71px;
     padding-left: 422px;
+    width: 161px;
+    margin-right: 0;
   }
 }
 
@@ -154,6 +185,10 @@
     display: grid;
     grid-template-columns: 896px 246px;
     column-gap: 80px;
+  }
+
+  .comlatate {
+    padding-top: 75px;
   }
 
   .complate__list {
@@ -167,9 +202,9 @@
     line-height: 36px;
     color: #000000;
     margin: 0;
-    padding-top: 75px;
-    margin-bottom: 81px;
     font-weight: 400;
+    padding: 0 36;
+    margin-left: -36px;
   }
 
   .complate__item {
@@ -203,11 +238,25 @@
     width: 245px;
     height: 288px;
     margin: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/image2.jpg");
     grid-column: 2/3;
+  }
+
+  .comlatate__order::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 82px;
+    top: 56px;
+    left: 83px;
+    background-image: url("../../img/icon_gift1.png");
+    z-index: 1;
   }
 
   .complate__text {
     padding: 0;
     padding-top: 184px;
+    margin-left: 40px;
+    text-align: center;
   }
 }
