@@ -2,7 +2,7 @@
   background-color: #ffffff;
   width: 280px;
   margin: 0 auto;
-  height: 112px;
+  min-height: 112px;
   display: flex;
   align-items: center;
 }
@@ -32,7 +32,7 @@
 @media (min-width: $tablet-width) {
   .invitation {
     width: 708px;
-    height: 199px;
+    min-height: 199px;
     display: flex;
     justify-content: space-between;
   }
@@ -57,7 +57,7 @@
 @media (min-width: $desktop-width) {
   .invitation {
     width: 565px;
-    height: 198px;
+    min-height: 198px;
     position: absolute;
     z-index: 1;
     top: 95px;
