@@ -92,7 +92,13 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 35px;
+  width: 187px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.form__contact-wrapp {
+  margin-top: 35px;
 }
 
 .form__contact-list {
@@ -138,6 +144,9 @@
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 143px;
 }
 
 .form__comment-text {
@@ -164,12 +173,15 @@
 .form__additional-title {
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 34px;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 164px;
 }
 
 .form__additional-list {
   margin: 0;
   padding: 0;
+  margin-top: 34px;
   margin-bottom: 40px;
   list-style-type: none;
 }
@@ -246,10 +258,13 @@
   .form__contact-title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    width: 594px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 
   .form__contact-list {
+    margin-top: 76px;
     margin-bottom: 65px;
   }
 
@@ -266,6 +281,9 @@
   .form__comment-title {
     font-size: 36px;
     line-height: 36px;
+    width: 262px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 
   .form__comment-text {
@@ -280,7 +298,9 @@
   .form__additional-title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    width: 301px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 
   .form__additional-list {
@@ -290,6 +310,7 @@
     list-style-type: none;
     row-gap: 32px;
     margin-bottom: 54px;
+    margin-top: 57px;
   }
 
   .form__additional-item {
@@ -368,10 +389,10 @@
   .form__contact-title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
   }
 
   .form__contact-list {
+    margin-top: 76px;
     margin-bottom: 67px;
     display: flex;
     justify-content: space-between;
