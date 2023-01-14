@@ -5,6 +5,10 @@
   height: 362px;
 }
 
+.map-wrapp {
+  background-color: #ffffff;
+}
+
 @media (min-width: $tablet-width) {
   .map iframe {
     height: 400px;

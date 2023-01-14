@@ -25,6 +25,12 @@
   margin-left: 57px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-header {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
     padding: 24px 0;

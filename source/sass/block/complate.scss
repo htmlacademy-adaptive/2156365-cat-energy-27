@@ -5,8 +5,9 @@
   margin: 0;
   font-weight: 400;
   display: inline-block;
-  width: 247px;
   background-color: #ffffff;
+  padding: 25px 20px 36px;
+  margin-left: -20px;
 }
 
 .comlatate {
@@ -16,13 +17,13 @@
 .complate__wrapp {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .complate__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 36px;
 }
 
 .complate__name {
@@ -44,7 +45,7 @@
   font-weight: 400;
 }
 
-.comlate__price {
+.complate__price {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -58,6 +59,12 @@
   grid-template-columns: 140px 140px;
   padding-top: 13px;
   padding-bottom: 19px;
+  min-height: 98px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.complate__item:nth-child(1) {
+  border-top: 1px solid #cdcdcd;
 }
 
 .complate__link {
@@ -65,17 +72,17 @@
   grid-column: 1/-1;
 }
 
-.comlatate__order {
+.complate__order {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/image2.jpg");
   background-repeat: no-repeat;
   background-size: 279px 289px;
   width: 279px;
-  height: 289px;
+  min-height: 289px;
   margin-top: 35px;
   position: relative;
 }
 
-.comlatate__order::before {
+.complate__order::before {
   position: absolute;
   content: "";
   width: 78px;
@@ -93,7 +100,7 @@
   color: #ffffff;
   margin: 0;
   padding-top: 186px;
-  width: 161px;
+  max-width: 161px;
   margin-left: 58px;
   text-align: center;
 }
@@ -106,17 +113,13 @@
     color: #000000;
     margin: 0;
     font-weight: 400;
-    width: 418px;
-    padding: 0 36px;
+    padding: 68px 36px 80px;
   }
 
-  .comlatate {
-    padding-top: 68px;
-  }
 
   .complate__wrapp {
     width: 708px;
-    margin-top: 80px;
+    padding-bottom: 76px;
   }
 
   .complate__name {
@@ -138,7 +141,7 @@
     grid-column: 2/3;
   }
 
-  .comlate__price {
+  .complate__price {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -146,6 +149,10 @@
     color: #444444;
     justify-self: end;
     grid-column: 3/-1;
+  }
+
+  .complate__list {
+    border: 1px solid #cdcdcd;
   }
 
   .complate__item {
@@ -162,24 +169,28 @@
     grid-column: 1/-1;
   }
 
-  .comlatate__order {
+  .complate__order {
+    margin: 0;
     background-size: 707px 200px;
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     margin-top: 69px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/imagetable2.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/imagetable2.png");
   }
 
   .complate__text {
     margin: 0;
-    padding-top: 71px;
+    padding: 0;
     padding-left: 422px;
-    width: 161px;
-    margin-right: 0;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .complate {
+    margin-bottom: 86px;
+  }
+
   .complate__wrapp {
     width: 1220px;
     display: grid;
@@ -187,14 +198,11 @@
     column-gap: 80px;
   }
 
-  .comlatate {
-    padding-top: 75px;
-  }
-
   .complate__list {
     width: 896px;
     min-height: 288px;
     grid-column: 1/2;
+    border: none;
   }
 
   .complate__tittle {
@@ -203,16 +211,18 @@
     color: #000000;
     margin: 0;
     font-weight: 400;
-    padding: 0 36;
-    margin-left: -36px;
+    padding: 76px 36px 81px 40px;
+    margin-left: -40px;
   }
 
   .complate__item {
     display: grid;
     grid-template-columns: 372px 140px 140px 244px;
     padding: 0;
+    min-height: 40px;
     padding-top: 15px;
     padding-bottom: 17px;
+    align-items: center;
   }
 
   .complate__name {
@@ -223,7 +233,7 @@
     grid-column: 2/3;
   }
 
-  .comlate__price {
+  .complate__price {
     grid-column: 3/4;
     justify-self: center;
   }
@@ -233,23 +243,23 @@
     grid-column: 4/-1;
   }
 
-  .comlatate__order {
-    background-size: 245px 288px;
+  .complate__order {
+    background-size: 245px 289px;
     width: 245px;
-    height: 288px;
+    min-height: 289px;
     margin: 0;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/image2.jpg");
     grid-column: 2/3;
   }
 
-  .comlatate__order::before {
+  .complate__order::before {
     position: absolute;
     content: "";
     width: 80px;
     height: 82px;
     top: 56px;
     left: 83px;
-    background-image: url("../../img/icon_gift1.png");
+    background-image: url("../img/icon_gift1.png");
     z-index: 1;
   }
 
