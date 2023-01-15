@@ -116,6 +116,15 @@
     padding: 0;
   }
 
+  .catalog-card__size-small {
+    width: 161px;
+    height: 172px;
+  }
+
+  .catalog-card__size-big {
+    width: 168px;
+    height: 200px;
+  }
 
   .catalog-card__link-img {
     grid-column: 2/3;
@@ -200,5 +209,15 @@
     line-height: 21px;
     width: 145px;
     text-align: center;
+  }
+
+  .catalog-card__size-small {
+    width: 161px;
+    height: 172px;
+  }
+
+  .catalog-card__size-big {
+    width: 172px;
+    height: 198px;
   }
 }

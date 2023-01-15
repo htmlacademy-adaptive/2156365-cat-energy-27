@@ -11,13 +11,18 @@
   cursor: pointer;
   border: 0;
   text-transform: uppercase;
+  width: 280px;
+  margin-bottom: 21px;
 }
+
 
 @media (min-width: $tablet-width) {
   .button-form {
     font-size: 20px;
     line-height: 20px;
     padding: 13px 45px;
+    margin: 0;
+    display: inline;
   }
 }
 
@@ -26,5 +31,6 @@
     font-size: 20px;
     line-height: 20px;
     padding: 13px 188px;
+    width: 568px;
   }
 }

@@ -41,7 +41,7 @@
       <p class="selection__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__wrapp wrapp">
+
         <div class="form__flex">
         <fieldset class="form__personal">
           <legend class="visully-hidden">Персональные данные.
@@ -70,7 +70,7 @@
         <fieldset class="form__select">
           <legend class="visully-hidden">Выбрать программу.
           </legend>
-          <ul class="form__select-list wrapp">
+          <ul class="form__select-list">
             <li class="form__select-item">
               <label class="form__select-control">
                 <input class="form__select-input" type="radio" name="program" value="minus" checked>
@@ -95,15 +95,15 @@
           </ul>
         </fieldset>
       </div>
-    </div>
+
         <fieldset class="form__contact">
           <legend class="visully-hidden">Контактные данные (владельца кота)</legend>
-          <div class="form__line line">
+          <div class="form__line-contact line line-contact">
             <div class="line__container">
           <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
             </div>
           </div>
-          <div class="form__contact-wrapp wrapp">
+
           <ul class="form__contact-list">
             <li class="form__contact-item">
               <label class="form__contact-name">
@@ -118,27 +118,26 @@
               </label>
             </li>
           </ul>
-        </div>
         </fieldset>
         <div class="form__comment">
           <label class="visully-hidden" for="comment">Комментарий</label>
-          <div class="form__line line">
+          <div class="form__line-comment line">
             <div class="line__container">
           <h2 class="form__comment-title">Комментарий</h2>
             </div>
           </div>
-          <div class="form__comment-wrap wrapp">
+          <div class="form__comment-wrap">
             <textarea class="form__comment-text" id="comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
         <fieldset class="form__additional">
           <legend class="visully-hidden">Дополнително</legend>
-          <div class="form__line line">
+          <div class="form__line-additional line">
             <div class="line__container">
           <h2 class="form__additional-title">Дополнително</h2>
             </div>
           </div>
-          <div class="form__additational-wrapp wrapp">
+
           <ul class="form__additional-list">
             <li class="form__additional-item">
               <label class="form__additional-control">
@@ -169,9 +168,9 @@
               </label>
             </li>
           </ul>
-          </div>
+
         </fieldset>
-        <div class="form__wrapp wrapp">
+        <div class="form__additional-wrapp">
         <button class="form__button-submit button-form" type="submit">Оправить заявку</button>
         <small class="form__smaal">* — Обязательные поля</small>
         </div>
