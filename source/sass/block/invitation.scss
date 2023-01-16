@@ -5,6 +5,7 @@
   min-height: 112px;
   display: flex;
   align-items: center;
+  padding: 26px 0 27px;
 }
 
 .invitation--color {
@@ -17,6 +18,9 @@
   color: #111111;
   font-weight: 400;
   margin: 0;
+  min-width: 140px;
+  min-height: 87px;
+  text-transform: uppercase;
 }
 
 .invitation__adress {
@@ -27,6 +31,7 @@
   line-height: 20px;
   color: #444444;
   font-style: normal;
+  min-width: 140px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,22 +40,23 @@
     min-height: 199px;
     display: flex;
     justify-content: space-between;
+    padding: 55px 40px 56px;
   }
 
   .invation__losung {
     font-size: 20px;
     line-height: 26px;
-    margin-top: 60px;
-    margin-bottom: 55px;
     width: 172px;
+    min-height: 84px;
+    text-align: left;
   }
 
   .invitation__adress {
     line-height: 20px;
     font-size: 16px;
-    margin-top: 60px;
-    margin-bottom: 55px;
     width: 160px;
+    min-height: 80px;
+    text-align: right;
   }
 }
 
@@ -62,6 +68,7 @@
     z-index: 1;
     top: 95px;
     left: 110px;
+    padding: 56px 80px;
   }
 
   .invitation--color {

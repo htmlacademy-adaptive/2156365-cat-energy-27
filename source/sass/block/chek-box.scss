@@ -1,0 +1,54 @@
+.form__additional-control {
+  display: block;
+  position: relative;
+  padding-left: 46px;
+}
+
+.form__additional-mark {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.form__additional-control:hover .form__additional-mark {
+  border-color: #bababa;
+}
+
+.form__additional-input:disabled + .form__additional-mark {
+  border-color: #bababa;
+}
+
+.form__additional-input [type="checkbox"]:checked + .form__additional-mark,
+.form__additional-input[type="checkbox"]:checked + .form__additional-mark {
+  background-image: url("../img/check-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+  background-position: 5px 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__additional-control {
+    padding-left: 62px;
+  }
+
+  .form__additional-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__additional-input [type="checkbox"]:checked + .form__additional-mark,
+  .form__additional-input[type="checkbox"]:checked + .form__additional-mark {
+    background-size: 24px 19px;
+    background-position: 7px 10px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form__additional-control {
+    padding-left: 60px;
+  }
+}

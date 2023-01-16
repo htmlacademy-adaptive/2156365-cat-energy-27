@@ -1,15 +1,4 @@
-/*.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.example__range-container {
+.widget__range-container {
   position: relative;
   display: flex;
   height: 256px;
@@ -17,7 +6,7 @@
   margin: 0 auto;
 }
 
-.example__button {
+.widget__button {
   display: grid;
   position: absolute;
   top: 0;
@@ -28,92 +17,92 @@
   background-color: transparent;
   border: none;
   padding: 0;
+
+  &::before {
+    content: "";
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 20px;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+
+  &:hover::before {
+    border: 2px solid #68b738;
+  }
+
+  &:focus::before,
+  &:active::before {
+    border: 2px solid #5eaa2f;
+  }
+
+  &::after {
+    content: "";
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    justify-self: center;
+    background-color: #666666;
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  &:hover::after {
+    background-color: #68b738;
+  }
+
+  &:focus::after,
+  &:active::after {
+    background-color: #5eaa2f;
+  }
 }
 
-.example__button::before {
-  content: "";
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border: 2px solid #666666;
-  border-radius: 20px;
-  z-index: 2;
-  box-sizing: border-box;
-}
-
-.example__button:hover::before {
-  border: 2px solid #68b738;
-}
-
-.example__button:focus::before,
-.example__button:active::before {
-  border: 2px solid #5eaa2f;
-}
-
-.example__button::after {
-  content: "";
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  justify-self: center;
-  background-color: #666666;
-  width: 4px;
-  height: 100%;
-  border-radius: 2px;
-  z-index: 1;
-}
-
-.example__button:hover::after {
-  background-color: #68b738;
-}
-
-.example__button:focus::after,
-.example__button:active::after {
-  background-color: #5eaa2f;
-}
-
-.example__arrows {
+.widget__arrows {
+  position: relative;
   grid-column: 1/-1;
   grid-row: 1/-1;
   margin: auto;
   fill: #666666;
   z-index: 2;
+
+  .widget__button:hover & {
+    fill: #68b738;
+  }
+
+  .widget__button:focus &,
+  .widget__button:active & {
+    fill: #5eaa2f;
+  }
 }
 
-.example__button:hover .example__arrows {
-  fill: #68b738;
-}
-
-.example__button:focus .example__arrows,
-.example__button:active .example__arrows {
-  fill: #5eaa2f;
-}
-
-.example__image {
+.widget__image {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
 }
 
-.example__before-image {
+.widget__before-image {
   object-position: left;
 }
 
-.example__after-image {
+.widget__after-image {
   object-position: right;
 }
 
-@media (min-width: 768px) {
-  .example__range-container {
+@media (min-width: $tablet-width) {
+  .widget__range-container {
     height: 512px;
     width: 560px;
   }
 
-  .example__images {
+  .widget__images {
     width: 560px;
     height: 512px;
   }
 }
- */
