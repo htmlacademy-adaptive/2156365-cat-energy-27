@@ -118,12 +118,12 @@
 
             <div class="widget__images widget__before">
               <picture>
-                <source type="image/webp" media="(min-width: $tablet-width)"
+                <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/example-before-tablet.webp, img/example-before-tablet@2x.webp 2x" width="560"
                   height="512">
                 <source type="image/webp" srcset="img/example-before-mobile.webp, img/example-before-mobile@2x.webp 2x"
                   width="280" height="256">
-                <source media="(min-width: $tablet-width)"
+                <source media="(min-width: 768px)"
                   srcset="img/example-before-tablet.png, img/example-before-tablet@2x.png 2x" width="560" height="512">
                 <img class="widget__image widget__before-image" src="img/living-cats/example-before-mobile.png"
                   srcset="img/example-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до снижения веса.">
@@ -131,11 +131,11 @@
             </div>
             <div class="widget__images widget__after">
               <picture>
-                <source type="image/webp" media="(min-width: $tablet-width)"
+                <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/example-after-tablet.webp, img/example-after-tablet@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="img/example-after-mobile.webp, img/example-after-mobile@2x.webp 2x"
                   width="280" height="256">
-                <source media="(min-width: $tablet-width)"
+                <source media="(min-width: 768px)"
                   srcset="img/example-after-tablet.png, img/example-after-tablet@2x.png 2x" width="560" height="512">
                 <img class="widget__image widget__after-image" src="img/example-after-mobile.png"
                   srcset="img/example-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после снижения веса.">
@@ -161,7 +161,9 @@
       <section class="invitation">
         <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="invitation__adress">ул. Большая
-          Конюшенная, д. 19/8 Санкт-Петербург</address>
+          Конюшенная, д. 19/8
+          <span class="invitation__margin">Санкт-Петербург</span>
+        </address>
       </section>
       <section class="map">
         <h2 class="visully-hidden">Магазин кот-энержи на карте.</h2>

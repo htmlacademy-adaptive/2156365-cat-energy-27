@@ -147,6 +147,21 @@
   padding-top: 14px;
   margin-left: 10px;
   border: 1px solid #e7e7e7;
+  padding-right: 40px;
+}
+
+.contact-input-mail {
+  background-image: url("../img/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px) center;
+  background-size: 17px 13px;
+}
+
+.contact-input-phone {
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px) center;
+  background-size: 15px 15px;
 }
 
 .form__contact-item:nth-child(1) {
@@ -191,6 +206,7 @@
   padding-top: 10px;
   height: 150px;
   border: 1px solid #e7e7e7;
+  resize: none;
 }
 
 .form__additional {
@@ -360,6 +376,7 @@
   .form__contact-input {
     font-size: 20px;
     line-height: 30px;
+    padding: 11px 40px 11px 20px;
   }
 
   .form__contact-name {

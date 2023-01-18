@@ -41,7 +41,7 @@
   color: #444444;
   margin: 0;
   text-align: center;
-  max-width: 77px;
+  padding: 0 16px;
   position: absolute;
   bottom: -13px;
   background-color: #eaeaea;
@@ -67,6 +67,13 @@
   align-items: center;
   border-radius: 3px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .example__desc {
+    max-width: 87px;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .example {
@@ -114,8 +121,7 @@
     margin: 0;
     text-align: center;
     background-color: #ffffff;
-    min-width: 114px;
-    max-width: 142px;
+    padding: 0 9px;
     bottom: -5px;
   }
 
@@ -190,9 +196,10 @@
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 14px;
-    color: #444444;
     margin: 0;
     text-align: center;
+    background-color: #f2f2f2;
+    padding: 0 8px;
   }
 
   .example__description {

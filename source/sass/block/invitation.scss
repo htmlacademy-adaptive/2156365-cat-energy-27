@@ -19,7 +19,6 @@
   font-weight: 400;
   margin: 0;
   min-width: 140px;
-  min-height: 87px;
   text-transform: uppercase;
 }
 
@@ -49,6 +48,11 @@
     width: 172px;
     min-height: 84px;
     text-align: left;
+  }
+
+  .invitation__margin {
+    margin-top: 19px;
+    display: block;
   }
 
   .invitation__adress {

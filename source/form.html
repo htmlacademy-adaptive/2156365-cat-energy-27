@@ -50,13 +50,13 @@
             <li class="form__personal-item">
               <label class="form__personal-name">
                 <span class="form__personal-text">Имя:*</span>
-                <input class="form__personal-input" type="text" name="name" value="Барсик">
+                <input class="form__personal-input" type="text" name="name" value="Барсик" required>
               </label>
             </li>
             <li class="form__personal-item">
               <label class="form__personal-name">
                 <span class="form__personal-text">Вес (кг):*</span>
-                <input class="form__personal-input" type="text" name="heft" value="7">
+                <input class="form__personal-input" type="text" name="heft" value="7" required>
               </label>
             </li>
             <li class="form__personal-item">
@@ -108,13 +108,13 @@
             <li class="form__contact-item">
               <label class="form__contact-name">
                 <span class="form__contact-text">E-mail:*</span>
-                <input class="form__contact-input" type="email" name="emial" value="кuklachev@gmail.com">
+                <input class="form__contact-input contact-input-mail" type="email" name="emial" value="кuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__contact-item">
               <label class="form__contact-name">
                 <span class="form__contact-text">Телефон:*</span>
-                <input class="form__contact-input" type="tel" name="tell" value="8 (960) 900-60-90">
+                <input class="form__contact-input contact-input-phone" type="tel" name="tell" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
@@ -182,7 +182,9 @@
       <section class="invitation invitation--color">
         <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="invitation__adress">ул. Большая
-          Конюшенная, д. 19/8 Санкт-Петербург</address>
+          Конюшенная, д. 19/8
+          <span class="invitation__margin">Санкт-Петербург</span>
+        </address>
       </section>
       <section class="map">
         <h2 class="visully-hidden">Магазин кот-энержи на карте.</h2>
