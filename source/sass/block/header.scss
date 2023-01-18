@@ -5,9 +5,8 @@
 }
 
 .main-header__logo {
-  width: 320px;
+  width: 280px;
   height: 65px;
-  padding-left: 20px;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -22,7 +21,7 @@
 .main-header__logo-paint {
   width: 110px;
   height: 18px;
-  margin-left: 57px;
+  margin-left: 51px;
 }
 
 @media (max-width: $mobile-width-only) {
