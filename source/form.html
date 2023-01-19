@@ -16,8 +16,8 @@
       <img class="main-header__logo-paint" src="img/logo-header-paint.svg" width="110" height="18"
         alt="Логотип надпись сайта кот-энержи.">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toogle">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visully-hidden">Открыть меню.
         </span>
       </button>
@@ -41,7 +41,7 @@
       <p class="selection__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__wrapp wrapp">
+
         <div class="form__flex">
         <fieldset class="form__personal">
           <legend class="visully-hidden">Персональные данные.
@@ -50,13 +50,13 @@
             <li class="form__personal-item">
               <label class="form__personal-name">
                 <span class="form__personal-text">Имя:*</span>
-                <input class="form__personal-input" type="text" name="name" value="Барсик">
+                <input class="form__personal-input" type="text" name="name" value="Барсик" required>
               </label>
             </li>
             <li class="form__personal-item">
               <label class="form__personal-name">
                 <span class="form__personal-text">Вес (кг):*</span>
-                <input class="form__personal-input" type="text" name="heft" value="7">
+                <input class="form__personal-input" type="text" name="heft" value="7" required>
               </label>
             </li>
             <li class="form__personal-item">
@@ -70,24 +70,24 @@
         <fieldset class="form__select">
           <legend class="visully-hidden">Выбрать программу.
           </legend>
-          <ul class="form__select-list wrapp">
+          <ul class="form__select-list">
             <li class="form__select-item">
               <label class="form__select-control">
-                <input class="form__select-input" type="radio" name="program" value="minus" checked>
+                <input class="form__select-input visully-hidden" type="radio" name="program" value="minus" checked>
                 <span class="form__select-mark"></span>
                 <span class="form__select-name">Похудение</span>
               </label>
             </li>
             <li class="form__select-item">
               <label class="form__select-control">
-                <input class="form__select-input" type="radio" name="program" value="plus">
+                <input class="form__select-input visully-hidden" type="radio" name="program" value="plus">
                 <span class="form__select-mark"></span>
                 <span class="form__select-name">Набор массы</span>
               </label>
             </li>
             <li class="form__select-item">
               <label class="form__select-control">
-                <input class="form__select-input" type="radio" name="program" value="default">
+                <input class="form__select-input visully-hidden" type="radio" name="program" value="default">
                 <span class="form__select-mark"></span>
                 <span class="form__select-name">Не знаю (Нужен ваш совет)</span>
               </label>
@@ -95,83 +95,82 @@
           </ul>
         </fieldset>
       </div>
-    </div>
+
         <fieldset class="form__contact">
           <legend class="visully-hidden">Контактные данные (владельца кота)</legend>
-          <div class="form__line line">
+          <div class="form__line-contact line line-contact">
             <div class="line__container">
           <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
             </div>
           </div>
-          <div class="form__contact-wrapp wrapp">
+
           <ul class="form__contact-list">
             <li class="form__contact-item">
               <label class="form__contact-name">
                 <span class="form__contact-text">E-mail:*</span>
-                <input class="form__contact-input" type="email" name="emial" value="кuklachev@gmail.com">
+                <input class="form__contact-input contact-input-mail" type="email" name="emial" value="кuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__contact-item">
               <label class="form__contact-name">
                 <span class="form__contact-text">Телефон:*</span>
-                <input class="form__contact-input" type="tel" name="tell" value="8 (960) 900-60-90">
+                <input class="form__contact-input contact-input-phone" type="tel" name="tell" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
-        </div>
         </fieldset>
         <div class="form__comment">
           <label class="visully-hidden" for="comment">Комментарий</label>
-          <div class="form__line line">
+          <div class="form__line-comment line">
             <div class="line__container">
           <h2 class="form__comment-title">Комментарий</h2>
             </div>
           </div>
-          <div class="form__comment-wrap wrapp">
+          <div class="form__comment-wrap">
             <textarea class="form__comment-text" id="comment" name="comment" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
         <fieldset class="form__additional">
           <legend class="visully-hidden">Дополнително</legend>
-          <div class="form__line line">
+          <div class="form__line-additional line">
             <div class="line__container">
-          <h2 class="form__additional-title">Дополнително</h2>
+          <h2 class="form__additional-title">Дополнительно</h2>
             </div>
           </div>
-          <div class="form__additational-wrapp wrapp">
+
           <ul class="form__additional-list">
             <li class="form__additional-item">
               <label class="form__additional-control">
-                <input class="form__additional-input" type="checkbox" name="sugar" value="sugar" checked>
+                <input class="form__additional-input visully-hidden" type="checkbox" name="sugar" value="sugar" checked>
                 <span class="form__additional-mark"></span>
                 <span class="form__additional-name">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__additional-item">
               <label class="form__additional-control">
-                <input class="form__additional-input" type="checkbox" name="water" value="water">
+                <input class="form__additional-input visully-hidden" type="checkbox" name="water" value="water">
                 <span class="form__additional-mark"></span>
                 <span class="form__additional-name">Питьевая вода</span>
               </label>
             </li>
             <li class="form__additional-item">
               <label class="form__additional-control">
-                <input class="form__additional-input" type="checkbox" name="milk" value="milk">
+                <input class="form__additional-input visully-hidden" type="checkbox" name="milk" value="milk">
                 <span class="form__additional-mark"></span>
                 <span class="form__additional-name">Молоко</span>
               </label>
             </li>
             <li class="form__additional-item">
               <label class="form__additional-control">
-                <input class="form__additional-input" type="checkbox" name="vitamin" value="vitamin">
+                <input class="form__additional-input visully-hidden" type="checkbox" name="vitamin" value="vitamin">
                 <span class="form__additional-mark"></span>
                 <span class="form__additional-name">Витамины</span>
               </label>
             </li>
           </ul>
-          </div>
+
         </fieldset>
-        <div class="form__wrapp wrapp">
+        <div class="form__additional-wrapp">
         <button class="form__button-submit button-form" type="submit">Оправить заявку</button>
         <small class="form__smaal">* — Обязательные поля</small>
         </div>
@@ -179,14 +178,19 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="invitation">
-      <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="invitation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </section>
-    <section class="map">
-      <h2 class="visully-hidden">Магазин кот-энержи на карте.</h2>
-      <iframe></iframe>
-    </section>
+    <div class="map-wrapp invitation--color">
+      <section class="invitation invitation--color">
+        <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="invitation__adress">ул. Большая
+          Конюшенная, д. 19/8
+          <span class="invitation__margin">Санкт-Петербург</span>
+        </address>
+      </section>
+      <section class="map">
+        <h2 class="visully-hidden">Магазин кот-энержи на карте.</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7987.290429285352!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1673035303683!5m2!1sru!2sru"  allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+      </section>
+    </div>
     <section class="index-footer">
       <div class="index-footer__container">
       <h2 class="visully-hidden">О нас.</h2>
@@ -245,7 +249,7 @@
     </section>
   </footer>
 
-
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

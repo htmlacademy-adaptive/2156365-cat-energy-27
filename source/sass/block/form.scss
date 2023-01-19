@@ -22,7 +22,8 @@
 }
 
 .form__personal-list {
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
   padding: 0;
   list-style-type: none;
   margin-bottom: 24px;
@@ -66,12 +67,26 @@
   padding: 0;
 }
 
+.form__line-contact {
+  margin-bottom: 35px;
+}
+
 .form__select-list {
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
   padding: 0;
   list-style-type: none;
   margin-top: 22px;
-  margin-bottom: 45px;
+  margin-bottom: 19px;
+}
+
+.form__select-item {
+  margin-bottom: 13px;
+  min-height: 30px;
+}
+
+.form__select-item:nth-child(3) {
+  margin-bottom: 0;
 }
 
 .form__select-name {
@@ -85,6 +100,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  padding-top: 26px;
 }
 
 .form__contact-title {
@@ -92,14 +108,18 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 35px;
+  width: 221px;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0 14px 0 20px;
+  margin-left: -20px;
 }
 
 .form__contact-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 24px;
+  width: 280px;
 }
 
 .form__contact-name {
@@ -127,18 +147,53 @@
   padding-top: 14px;
   margin-left: 10px;
   border: 1px solid #e7e7e7;
+  padding-right: 40px;
 }
 
-.form__contact-item {
+.contact-input-mail {
+  background-image: url("../img/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px) center;
+  background-size: 17px 13px;
+}
+
+.contact-input-phone {
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px) center;
+  background-size: 15px 15px;
+}
+
+.form__contact-item:nth-child(1) {
   margin-bottom: 14px;
 }
+
+.form__comment {
+  padding-top: 24px;
+}
+
+.form__line-comment {
+  margin-bottom: 38px;
+}
+
 
 .form__comment-title {
   margin: 0;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 163px;
+  padding: 0 22px 0 20px;
+  margin-left: -20px;
 }
+
+.form__comment-wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
 
 .form__comment-text {
   font-family: "Oswald", sans-serif;
@@ -150,32 +205,47 @@
   padding-left: 15px;
   padding-top: 10px;
   height: 150px;
-  margin-bottom: 23px;
-  margin-top: 38px;
   border: 1px solid #e7e7e7;
+  resize: none;
 }
 
 .form__additional {
   margin: 0;
   padding: 0;
   border: none;
+  padding-top: 23px;
 }
 
-.form__additional-title {
-  font-size: 24px;
-  line-height: 26px;
+.form__line-additional {
   margin-bottom: 34px;
 }
 
-.form__additional-list {
+.form__additional-title {
   margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 184px;
+  padding: 0 23px 0 20px;
+  margin-left: -20px;
+}
+
+.form__additional-list {
+  margin: 0 auto;
   padding: 0;
-  margin-bottom: 40px;
+  width: 280px;
   list-style-type: none;
 }
 
 .form__additional-item {
+  min-height: 30px;
   margin-bottom: 13px;
+}
+
+.form__additional-item:nth-child(4) {
+  margin-bottom: 34px;
 }
 
 .form__additional-name {
@@ -184,11 +254,28 @@
   text-transform: uppercase;
 }
 
+.form__additional-wrapp {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
 .form__smaal {
-  margin-top: 21px;
+  font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 32px;
+  margin: 0 auto;
+  margin-left: 64px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form__personal {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .form__select {
+    border-bottom: 1px solid #e7e7e7;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -196,11 +283,17 @@
     margin-bottom: 72px;
   }
 
+  .selection__wrapp {
+    width: 630px;
+    margin: 0 auto;
+    padding-top: 16px;
+  }
+
+
   .selection__losung {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
-    padding-top: 65px;
   }
 
   .selection__description {
@@ -212,12 +305,17 @@
 
   .form__personal-list {
     width: 630px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .form__personal-item {
     margin-bottom: 20px;
   }
+
+  .form__personal-item:nth-child(3) {
+    margin-bottom: 72px;
+  }
+
 
   .form__personal-name {
     font-size: 20px;
@@ -232,10 +330,17 @@
   }
 
   .form__select-list {
-    margin-top: 72px;
-    margin-bottom: 71px;
+    margin: 0 auto;
+    padding-left: 28px;
+    padding-top: 30px;
+    padding-bottom: 25px;
     width: 628px;
     height: 200px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .form__select-item {
+    min-height: 40px;
   }
 
   .form__select-name {
@@ -243,19 +348,35 @@
     line-height: 30px;
   }
 
-  .form__contact-title {
-    font-size: 36px;
-    line-height: 36px;
+  .form__contact {
+    padding-top: 71px;
+  }
+
+  .form__line-contact {
     margin-bottom: 76px;
   }
 
+
+  .form__contact-title {
+    font-size: 36px;
+    line-height: 36px;
+    min-width: 595px;
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 42px;
+    margin: 0;
+  }
+
   .form__contact-list {
-    margin-bottom: 65px;
+    margin: 0 auto;
+
+    width: 630px;
   }
 
   .form__contact-input {
     font-size: 20px;
     line-height: 30px;
+    padding: 11px 40px 11px 20px;
   }
 
   .form__contact-name {
@@ -263,43 +384,71 @@
     line-height: 30px;
   }
 
+  .form__comment-wrap {
+    width: 630px;
+    margin: 0 auto;
+  }
+
   .form__comment-title {
     font-size: 36px;
     line-height: 36px;
+    min-width: 262px;
+    padding: 0 40px;
+    margin: 0;
   }
 
   .form__comment-text {
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 76px;
-    margin-bottom: 65px;
     padding-left: 19px;
     height: 174px;
+  }
+
+  .form__additional {
+    padding-top: 65px;
   }
 
   .form__additional-title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin: 0;
+    width: 301px;
+    padding: 0 40px;
   }
 
   .form__additional-list {
-    width: 533px;
+    width: 630px;
     display: grid;
-    grid-template-columns: 267px 267px;
+    grid-template-columns: 349px 261px;
     list-style-type: none;
     row-gap: 32px;
+    margin: 0 auto;
     margin-bottom: 54px;
   }
 
+  .form__line-additional {
+    margin-bottom: 57px;
+  }
+
   .form__additional-item {
+    min-height: 40px;
     margin: 0;
   }
 
+  .form__additional-item:nth-child(4) {
+    margin-bottom: 0;
+  }
+
   .form__additional-name {
-    margin-left: 20px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form__additional-wrapp {
+    width: 630px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .form__smaal {
@@ -310,10 +459,17 @@
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .form {
     margin-bottom: 82px;
   }
+
+  .selection__wrapp {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
 
   .selection__losung {
     font-size: 60px;
@@ -338,6 +494,10 @@
     margin-bottom: 20px;
   }
 
+  .form__personal-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+
   .form__personal-name {
     font-size: 20px;
     line-height: 30px;
@@ -360,22 +520,36 @@
   }
 
   .form__flex {
+    margin: 0 auto;
+    width: 1220px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 65px;
   }
+
+  .form__contact {
+    padding-top: 69px;
+  }
+
 
   .form__contact-title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin: 0;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 
   .form__contact-list {
-    margin-bottom: 67px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 610px 610px;
+    width: 1220px;
+    margin: 0 auto;
   }
+
+  .form__contact-item:nth-child(2) {
+    margin-left: auto;
+  }
+
 
   .form__contact-input {
     font-size: 20px;
@@ -388,27 +562,43 @@
     width: 571px;
   }
 
+  .form__comment-wrap {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form__line-comment {
+    margin-bottom: 76px;
+  }
+
   .form__comment-title {
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
+    margin-left: -40px;
   }
 
   .form__comment-text {
     font-size: 20px;
     line-height: 30px;
-    margin-top: 76px;
-    margin-bottom: 67px;
   }
+
+  .form__additional {
+    padding-top: 67px;
+  }
+
 
   .form__additional-title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin: 0;
+    margin-left: -40px;
   }
 
   .form__additional-list {
-    width: 1200px;
+    width: 1220px;
     grid-template-columns: repeat(4, 300px);
+    margin-bottom: 61px;
   }
 
   .form__additional-item {
@@ -416,8 +606,13 @@
     min-width: 200px;
   }
 
+  .form__additional-wrapp {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
   .form__additional-name {
-    margin-left: 20px;
     font-size: 20px;
     line-height: 30px;
   }

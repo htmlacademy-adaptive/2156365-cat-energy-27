@@ -1,0 +1,16 @@
+.map iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 362px;
+}
+
+.map-wrapp {
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .map iframe {
+    height: 400px;
+  }
+}

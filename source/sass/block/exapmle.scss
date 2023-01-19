@@ -29,9 +29,9 @@
 .example__item {
   font-size: 24px;
   line-height: 24px;
-  margin-top: 25px;
-  margin-bottom: 9px;
   text-align: center;
+  min-height: 56px;
+  padding-top: 15px;
 }
 
 .example__desc {
@@ -40,8 +40,11 @@
   line-height: 12px;
   color: #444444;
   margin: 0;
-  margin-bottom: 20px;
   text-align: center;
+  padding: 0 16px;
+  position: absolute;
+  bottom: -13px;
+  background-color: #eaeaea;
 }
 
 .example__description {
@@ -51,9 +54,32 @@
   margin: 0;
   margin-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
+.example__box {
+  border: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 3px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .example__desc {
+    max-width: 87px;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
+  .example {
+    padding-bottom: 99px;
+  }
+
   .example__losung {
     font-size: 60px;
     line-height: 60px;
@@ -83,7 +109,6 @@
   .example__item {
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
     text-align: center;
   }
 
@@ -91,10 +116,13 @@
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 14px;
+    font-weight: 400;
     color: #444444;
     margin: 0;
-    margin-bottom: 99px;
     text-align: center;
+    background-color: #ffffff;
+    padding: 0 9px;
+    bottom: -5px;
   }
 
   .example__description {
@@ -104,11 +132,18 @@
     margin: 0;
     width: 174px;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .example__flex {
     display: flex;
     justify-content: space-between;
+  }
+
+  .example__box {
+    min-height: 72px;
   }
 }
 
@@ -129,6 +164,7 @@
 
   .example {
     margin: 0;
+    padding: 0;
   }
 
   .example__text {
@@ -154,17 +190,16 @@
     line-height: 37px;
     text-align: center;
     margin: 0;
-    margin-top: 15px;
-    margin-bottom: 11px;
   }
 
   .example__desc {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 14px;
-    color: #444444;
     margin: 0;
     text-align: center;
+    background-color: #f2f2f2;
+    padding: 0 8px;
   }
 
   .example__description {
@@ -174,6 +209,7 @@
     margin: 0;
     margin-top: 55px;
     width: 327px;
+    flex-direction: row;
   }
 
   .example__flex {

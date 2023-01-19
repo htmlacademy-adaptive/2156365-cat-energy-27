@@ -2,8 +2,14 @@
   background-color: #ffffff;
   width: 280px;
   margin: 0 auto;
-  height: 112px;
+  min-height: 112px;
   display: flex;
+  align-items: center;
+  padding: 26px 0 27px;
+}
+
+.invitation--color {
+  background-color: #f2f2f2;
 }
 
 .invation__losung {
@@ -12,6 +18,8 @@
   color: #111111;
   font-weight: 400;
   margin: 0;
+  min-width: 140px;
+  text-transform: uppercase;
 }
 
 .invitation__adress {
@@ -22,36 +30,56 @@
   line-height: 20px;
   color: #444444;
   font-style: normal;
+  min-width: 140px;
 }
 
 @media (min-width: $tablet-width) {
   .invitation {
     width: 708px;
-    height: 199px;
+    min-height: 199px;
     display: flex;
     justify-content: space-between;
+    padding: 55px 40px 56px;
   }
 
   .invation__losung {
     font-size: 20px;
     line-height: 26px;
-    margin-top: 60px;
-    margin-bottom: 55px;
     width: 172px;
+    min-height: 84px;
+    text-align: left;
+  }
+
+  .invitation__margin {
+    margin-top: 19px;
+    display: block;
   }
 
   .invitation__adress {
     line-height: 20px;
     font-size: 16px;
-    margin-top: 60px;
-    margin-bottom: 55px;
     width: 160px;
+    min-height: 80px;
+    text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .invitation {
     width: 565px;
-    height: 198px;
+    min-height: 198px;
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+    padding: 56px 80px;
+  }
+
+  .invitation--color {
+    background-color: #ffffff;
+  }
+
+  .map-wrapp {
+    position: relative;
   }
 }
