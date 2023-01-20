@@ -5,15 +5,25 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-img" src="img/logo-header-mobil.svg" width="34" height="38"
-        alt="Логотип сайта кот-энержи.">
-      <img class="main-header__logo-paint" src="img/logo-header-paint.svg" width="110" height="18"
+    <a class=" main-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" width="202" height="60">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+        <img class="main-header__logo-img" src="img/logo-header-mobil.svg" width="34" height="38"
+          alt="Логотип сайта кот-энержи.">
+      </picture>
+      <img class="main-header__logo-paint" src="img/logo-header-paint.svg" width="101" height="18"
         alt="Логотип надпись сайта кот-энержи.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -43,7 +53,14 @@
         <li class="catalog-card__item">
           <div class="catalog-card__iner-wrap">
           <a class="catalog-card__link-img" href="#">
-            <img class="catalog-card__size-small" src="img/catalog-pic1.png" width="68" height="86" alt="Товар Cat Energy PRO 500 г."></a>
+            <picture>
+              <!--
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet1.webp 1x, img/index-can-tablet1@2x.webp 2x">
+              <source type="image/webp" srcset="img/intro-can-mobile1.webp 1x, img/index-can-mobile1@2x.webp 2x"> -->
+              <source media="(min-width: 768px)" srcset="img/catalog-tabla-desk-pic1.png 1x, img/catalog-tabla-desk-pic1@2x.png 2x" width="161" height="172">
+              <img class="catalog-card__size-small" src="img/catalog-pic1.png" srcset="img/catalog-pic1@2x.png 2x" width="68" height="86" alt="Товар Cat Energy PRO 500 г.">
+            </picture>
+          </a>
           <a class="catalog-card__link-title" href="#">
             <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
           </a>
@@ -269,7 +286,7 @@
   </div>
   </main>
   <footer class="main-footer">
-    <div class="map-wrapp invitation--color">
+    <div class="main-footer__map-wrapp">
       <section class="invitation invitation--color ">
         <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="invitation__adress">ул. Большая

@@ -1,15 +1,14 @@
 @import "components/fonts.scss";
-@import "components/Viewports.scss";
+@import "components/viewports.scss";
 @import "components/visually-hidden.scss";
 @import "components/global.scss";
-@import "block/body.scss";
-@import "block/header.scss";
+@import "block/page-body.scss";
+@import "block/main-header.scss";
 @import "block/button-link.scss";
 @import "block/button-form";
 @import "block/button-card.scss";
 @import "block/button-complate.scss";
-@import "block/button-card--gray.scss";
-@import "block/nav.scss";
+@import "block/main-nav.scss";
 @import "block/main-container.scss";
 @import "block/wrapp.scss";
 @import "block/main-intro.scss";
@@ -18,6 +17,10 @@
 @import "block/living.scss";
 @import "block/exapmle.scss";
 @import "block/widget.scss";
+@import "block/catalog-container.scss";
+@import "block/social-networks.scss";
+@import "block/selection.scss";
+@import "block/main-footer.scss";
 @import "block/map.scss";
 @import "block/invitation.scss";
 @import "block/index-footer.scss";
@@ -27,6 +30,4 @@
 @import "block/complate.scss";
 @import "block/form.scss";
 @import "block/line.scss";
-@import "block/radio-box.scss";
-@import "block/chek-box.scss";
 @import "block/copyright.scss";

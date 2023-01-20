@@ -1,18 +1,22 @@
 .main-container {
   position: relative;
-}
 
-.main-container::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 302px;
-  top: 0;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/../img/index-background-desktop2.jpg");
-  background-repeat: no-repeat;
-  z-index: -1;
-  background-size: cover;
-  background-position: top center;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 302px;
+    top: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop2.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-position: top center;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop2@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,17 +28,21 @@
 @media (min-width: $desktop-width) {
   .main-container {
     position: static;
-  }
 
-  .main-container::before {
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 694px;
-    top: 0;
-    right: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-background-desktop1.jpg");
-    background-repeat: no-repeat;
-    background-size: top left;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop1.jpg");
+      background-repeat: no-repeat;
+      background-size: top left;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop1@2x.jpg");
+      }
+    }
   }
 }

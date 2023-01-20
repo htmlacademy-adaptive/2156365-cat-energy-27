@@ -5,24 +5,24 @@
 
 .line {
   position: relative;
-}
 
-.line::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  height: 2px;
-  width: 100%;
-  background-color: #68b738;
-  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
-  .line-contact {
+  .line--contact {
     position: relative;
   }
 
-  .line-contact::before {
+  .line--contact::before {
     content: "";
     position: absolute;
     top: 25%;

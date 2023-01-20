@@ -61,10 +61,11 @@
   padding-bottom: 19px;
   min-height: 98px;
   border-bottom: 1px solid #cdcdcd;
-}
 
-.complate__item:nth-child(1) {
-  border-top: 1px solid #cdcdcd;
+
+  &:nth-child(1) {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .complate__link {
@@ -80,17 +81,21 @@
   min-height: 289px;
   margin-top: 35px;
   position: relative;
-}
 
-.complate__order::before {
-  position: absolute;
-  content: "";
-  width: 78px;
-  height: 80px;
-  top: 59px;
-  left: 101px;
-  background-image: url("../../img/icon_gift1.png");
-  z-index: 1;
+  @media (min-resolution: 1.5dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/image2@2x.ipg");
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    top: 59px;
+    left: 101px;
+    background-image: url("../../img/icon_gift1.png");
+    z-index: 1;
+  }
 }
 
 .complate__text {
@@ -177,6 +182,10 @@
     min-height: 200px;
     margin-top: 69px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/imagetable2.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/imagetable2@2x.png");
+    }
   }
 
   .complate__text {
@@ -251,19 +260,23 @@
     width: 245px;
     min-height: 288px;
     margin: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/image2.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/imagedesk2.png");
     grid-column: 2/3;
-  }
 
-  .complate__order::before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 82px;
-    top: 56px;
-    left: 83px;
-    background-image: url("../img/icon_gift1.png");
-    z-index: 1;
+    @media (min-resolution: 1.5dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/imagedesk2@2x.png");
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 82px;
+      top: 56px;
+      left: 83px;
+      background-image: url("../img/icon_gift1.png");
+      z-index: 1;
+    }
   }
 
   .complate__text {
