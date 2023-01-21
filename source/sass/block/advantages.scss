@@ -18,55 +18,55 @@
   margin-bottom: 20px;
   padding: 30px 33px 18px 20px;
   position: relative;
-}
 
-.advantages__item:nth-child(2) {
-  margin: 0;
-}
+  &:nth-child(2) {
+    margin: 0;
+  }
 
 
-.advantages__item--img1::after {
-  content: "";
-  background-image: url("../img/advantages-cattmobile1.svg");
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  top: 24px;
-  left: 22px;
-}
+  &--img1::after {
+    content: "";
+    background-image: url("../img/advantages-cattmobile1.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    top: 24px;
+    left: 22px;
+  }
 
-.advantages__item--img1::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  height: 53px;
-  width: 50px;
-  top: 24px;
-  left: 22px;
-  background-color: #68b738;
-}
+  &--img1::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 53px;
+    width: 50px;
+    top: 24px;
+    left: 22px;
+    background-color: #68b738;
+  }
 
-.advantages__item--img2::after {
-  content: "";
-  background-image: url("../img/advantages-catmobil2.svg");
-  position: absolute;
-  background-repeat: no-repeat;
-  height: 28px;
-  width: 67px;
-  top: 35px;
-  left: 13px;
-}
+  &--img2::after {
+    content: "";
+    background-image: url("../img/advantages-catmobil2.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 67px;
+    top: 35px;
+    left: 13px;
+  }
 
-.advantages__item--img2::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  height: 53px;
-  width: 50px;
-  top: 24px;
-  left: 22px;
-  background-color: #68b738;
+  &--img2::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 53px;
+    width: 50px;
+    top: 24px;
+    left: 22px;
+    background-color: #68b738;
+  }
 }
 
 .advantages__link {
@@ -76,16 +76,17 @@
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
-}
 
-.advantages__link::after {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 12px;
-  background-image: url("/../img/icon.svg");
-  top: 6px;
-  left: 101px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("/../img/icon.svg");
+    top: 6px;
+    left: 101px;
+  }
 }
 
 
@@ -139,50 +140,51 @@
     margin: 0;
     margin-bottom: 30px;
     padding: 77px 316px 53px 53px;
-  }
 
-  .advantages__item--img1::after {
-    content: "";
-    background-image: url("../img/advantages-cattable1.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 211px;
-    width: 200px;
-    top: 81px;
-    left: 476px;
-  }
 
-  .advantages__item--img1::before {
-    content: "";
-    background-color: #68b738;
-    position: absolute;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    top: 81px;
-    left: 446px;
-  }
+    &--img1::after {
+      content: "";
+      background-image: url("../img/advantages-cattable1.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 211px;
+      width: 200px;
+      top: 81px;
+      left: 476px;
+    }
 
-  .advantages__item--img2::after {
-    content: "";
-    background-image: url("../img/advantages-cattable2.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 265px;
-    top: 135px;
-    left: 412px;
-  }
+    &--img1::before {
+      content: "";
+      background-color: #68b738;
+      position: absolute;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      top: 81px;
+      left: 446px;
+    }
 
-  .advantages__item--img2::before {
-    content: "";
-    background-color: #68b738;
-    position: absolute;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    top: 81px;
-    left: 446px;
+    &--img2::after {
+      content: "";
+      background-image: url("../img/advantages-cattable2.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 200px;
+      width: 265px;
+      top: 135px;
+      left: 412px;
+    }
+
+    &--img2::before {
+      content: "";
+      background-color: #68b738;
+      position: absolute;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      top: 81px;
+      left: 446px;
+    }
   }
 
   .advantages__title {
@@ -210,11 +212,11 @@
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
-  }
 
-  .advantages__link::after {
-    top: 8px;
-    left: 133px;
+    &::after {
+      top: 8px;
+      left: 133px;
+    }
   }
 }
 
@@ -238,50 +240,51 @@
     min-height: 374px;
     margin: 0;
     padding: 77px 61px 55px 52px;
-  }
 
-  .advantages__item--img1::after {
-    content: "";
-    background-image: url("../img/advantages-catdesk1.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 106px;
-    width: 100px;
-    top: 41px;
-    left: 67px;
-  }
 
-  .advantages__item--img1::before {
-    content: "";
-    background-color: #68b738;
-    position: absolute;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    top: 47px;
-    left: 52px;
-  }
+    &--img1::after {
+      content: "";
+      background-image: url("../img/advantages-catdesk1.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 106px;
+      width: 100px;
+      top: 41px;
+      left: 67px;
+    }
 
-  .advantages__item--img2::after {
-    content: "";
-    background-image: url("../img/advantages-catdesk2.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 134px;
-    top: 67px;
-    left: 33px;
-  }
+    &--img1::before {
+      content: "";
+      background-color: #68b738;
+      position: absolute;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      top: 47px;
+      left: 52px;
+    }
 
-  .advantages__item--img2::before {
-    content: "";
-    background-color: #68b738;
-    position: absolute;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    top: 47px;
-    left: 52px;
+    &--img2::after {
+      content: "";
+      background-image: url("../img/advantages-catdesk2.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 134px;
+      top: 67px;
+      left: 33px;
+    }
+
+    &--img2::before {
+      content: "";
+      background-color: #68b738;
+      position: absolute;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   .advantages__title {

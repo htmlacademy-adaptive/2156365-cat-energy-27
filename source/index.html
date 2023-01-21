@@ -1,28 +1,27 @@
-
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body class="page__body">
- <!--поместить сразу после body, а после 8 раздела удалить, т.к. при автоматизации автоматически будет сформирован внешний спрайт-->
-  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="arrows">
-      <path d="M8 0L0 9L8 18V0Z"></path>
-      <path d="M24 9L16 0V18L24 9Z"></path>
-    </symbol>
-  </svg>
-<!-------------------------------------------------------->
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-img" src="img/logo-header-mobil.svg" width="34" height="38"
-        alt="Логотип сайта кот-энержи.">
-      <img class="main-header__logo-paint" src="img/logo-header-paint.svg" width="110" height="18"
+    <a class=" main-header__logo ">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" width="202" height="60">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+        <img class="main-header__logo-img" src="img/logo-header-mobil.svg" width="34" height="38"
+          alt="Логотип сайта кот-энержи.">
+      </picture>
+      <img class="main-header__logo-paint" src="img/logo-header-paint.svg" width="101" height="18"
         alt="Логотип надпись сайта кот-энержи.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -44,14 +43,18 @@
 
   </header>
   <main class="main-container">
-
     <section class="main-intro">
       <div class="main-intro__container">
         <h1 class="main-intro__title">Функциональное <br>питание для котов</h1>
         <p class="main-intro__text">Занялся собой? Займись котом!</p>
-        <img class="main-intro__img" src="img/intro-can-mobile1.png" width="280" height="270" alt="Картинка функциональное
-        питание для котов.">
-
+        <picture>
+          <source type="image/webp" media="(min-width: 1280px)" srcset="img/index-can-desk.webp 1x, img/index-can-desk@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet1.webp 1x, img/index-can-tablet1@2x.webp 2x">
+          <source type="image/webp" srcset="img/intro-can-mobile1.webp 1x, img/index-can-mobile1@2x.webp 2x">
+          <source media="(min-width: 1280px)" srcset="img/index-can-desk.png 1x, img/index-can-desk@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet1.png 1x, img/index-can-tablet1@2x.png 2x" width="709" height="609">
+          <img class="main-intro__img" src="img/intro-can-mobile1.png" srcset="img/index-can-mobile1@2x.png 2x" width="280" height="270" alt=" Картинка функциональное  питание для котов.">
+        </picture>
         <a class="main-intro__link button-link" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -117,7 +120,7 @@
           <h2 class="visully-hidden">Картинка кота до и после.</h2>
           <div class="widget__range-container">
 
-            <div class="widget__images widget__before">
+            <div class="widget__images  widget__images--before">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/example-before-tablet.webp, img/example-before-tablet@2x.webp 2x" width="560"
@@ -126,11 +129,11 @@
                   width="280" height="256">
                 <source media="(min-width: 768px)"
                   srcset="img/example-before-tablet.png, img/example-before-tablet@2x.png 2x" width="560" height="512">
-                <img class="widget__image widget__before-image" src="img/living-cats/example-before-mobile.png"
+                <img class="widget__image  widget__image--before" src="img/living-cats/example-before-mobile.png"
                   srcset="img/example-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до снижения веса.">
               </picture>
             </div>
-            <div class="widget__images widget__after">
+            <div class="widget__images  widget__images--after">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/example-after-tablet.webp, img/example-after-tablet@2x.webp 2x" width="560" height="512">
@@ -138,16 +141,14 @@
                   width="280" height="256">
                 <source media="(min-width: 768px)"
                   srcset="img/example-after-tablet.png, img/example-after-tablet@2x.png 2x" width="560" height="512">
-                <img class="widget__image widget__after-image" src="img/example-after-mobile.png"
+                <img class="widget__image widget__image--after" src="img/example-after-mobile.png"
                   srcset="img/example-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после снижения веса.">
               </picture>
             </div>
 
             <button class="widget__button" type="button">
               <svg class="widget__arrows" viewBox="0 0 24 18" width="24" height="18">
-                <use href="#arrows"></use>
-                <!--после вынесения в отдельный спрайт будет так:-->
-                <!--<use href="img/sprite.svg#arrows"></use> -->
+                <use href="img/sprite.svg#arrows"></use>
               </svg>
               <span class="visully-hidden">Кнопка слайдера.</span>
             </button>
@@ -158,7 +159,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="map-wrapp">
+    <div class="main-footer__map-wrapp">
       <section class="invitation">
         <h2 class="invation__losung">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="invitation__adress">ул. Большая

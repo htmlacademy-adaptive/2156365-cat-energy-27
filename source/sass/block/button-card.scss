@@ -12,6 +12,11 @@
   cursor: pointer;
   border: 0;
   text-transform: uppercase;
+
+  &--gray {
+    background-color: #f2f2f2;
+    color: #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {
