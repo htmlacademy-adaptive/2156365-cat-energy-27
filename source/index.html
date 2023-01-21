@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"><!-- 32×32 -->
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
@@ -14,16 +12,7 @@
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body class="page__body">
- <!--поместить сразу после body, а после 8 раздела удалить, т.к. при автоматизации автоматически будет сформирован внешний спрайт-->
-  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="arrows">
-      <path d="M8 0L0 9L8 18V0Z"></path>
-      <path d="M24 9L16 0V18L24 9Z"></path>
-    </symbol>
-  </svg>
-<!-------------------------------------------------------->
   <header class="main-header">
     <a class=" main-header__logo ">
       <picture>
@@ -54,15 +43,14 @@
 
   </header>
   <main class="main-container">
-
     <section class="main-intro">
       <div class="main-intro__container">
         <h1 class="main-intro__title">Функциональное <br>питание для котов</h1>
         <p class="main-intro__text">Занялся собой? Займись котом!</p>
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1280px)" srcset="img/index-can-desk.webp 1x, img/index-can-desk@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1280px)" srcset="img/index-can-desk.webp 1x, img/index-can-desk@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet1.webp 1x, img/index-can-tablet1@2x.webp 2x">
-          <source type="image/webp" srcset="img/intro-can-mobile1.webp 1x, img/index-can-mobile1@2x.webp 2x"> -->
+          <source type="image/webp" srcset="img/intro-can-mobile1.webp 1x, img/index-can-mobile1@2x.webp 2x">
           <source media="(min-width: 1280px)" srcset="img/index-can-desk.png 1x, img/index-can-desk@2x.png 2x" width="552" height="499">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet1.png 1x, img/index-can-tablet1@2x.png 2x" width="709" height="609">
           <img class="main-intro__img" src="img/intro-can-mobile1.png" srcset="img/index-can-mobile1@2x.png 2x" width="280" height="270" alt=" Картинка функциональное  питание для котов.">
@@ -160,9 +148,7 @@
 
             <button class="widget__button" type="button">
               <svg class="widget__arrows" viewBox="0 0 24 18" width="24" height="18">
-                <use href="#arrows"></use>
-                <!--после вынесения в отдельный спрайт будет так:-->
-                <!--<use href="img/sprite.svg#arrows"></use> -->
+                <use href="img/sprite.svg#arrows"></use>
               </svg>
               <span class="visully-hidden">Кнопка слайдера.</span>
             </button>
