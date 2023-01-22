@@ -73,10 +73,10 @@
 @media (max-width: $mobile-width-only) {
   .catalog-card__item {
     border-bottom: 1px solid #ebebeb;
-  }
 
-  .catalog-card__item:nth-child(1) {
-    border-top: 1px solid #ebebeb;
+    &:nth-child(1) {
+      border-top: 1px solid #ebebeb;
+    }
   }
 }
 
@@ -151,11 +151,11 @@
     padding-bottom: 9px;
     border-bottom: 1px solid #cdcdcd;
     padding-top: 7px;
-  }
 
-  .catalog-card__row:nth-child(2) {
-    padding-top: 5px;
-    padding-bottom: 7px;
+    &:nth-child(2) {
+      padding-top: 5px;
+      padding-bottom: 7px;
+    }
   }
 
 
@@ -170,6 +170,7 @@
     padding: 0;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .catalog-container__losung {

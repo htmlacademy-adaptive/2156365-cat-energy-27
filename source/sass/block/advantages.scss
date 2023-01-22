@@ -115,14 +115,16 @@
   }
 
 
-  .advantages__description::before {
-    position: absolute;
-    content: "";
-    width: 240px;
-    height: 1px;
-    background-color: #d9d9d9;
-    top: 209px;
-    left: 20px;
+  .advantages__description {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 240px;
+      height: 1px;
+      background-color: #d9d9d9;
+      top: 209px;
+      left: 20px;
+    }
   }
 }
 

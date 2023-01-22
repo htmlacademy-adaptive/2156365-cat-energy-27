@@ -140,16 +140,18 @@
     counter-reset: count 0;
   }
 
-  .work__counters::after {
-    width: 134px;
-    font-size: 280px;
-    color: #f2f2f2;
-    z-index: -1;
-    left: 118px;
-    top: 125px;
-    font-family: "Oswald", sans-serif;
-    content: counter(count, decimal);
-    position: absolute;
+  .work__counters {
+    &::after {
+      width: 134px;
+      font-size: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      left: 118px;
+      top: 125px;
+      font-family: "Oswald", sans-serif;
+      content: counter(count, decimal);
+      position: absolute;
+    }
   }
 
   .work__item {

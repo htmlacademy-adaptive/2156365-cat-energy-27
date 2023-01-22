@@ -71,7 +71,7 @@
     position: absolute;
     z-index: 1;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 610px);
     padding: 56px 80px;
 
     &--color {

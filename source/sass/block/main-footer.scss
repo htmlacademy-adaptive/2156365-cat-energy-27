@@ -2,6 +2,12 @@
   background-color: #ffffff;
 }
 
+.main-footer {
+  &--color {
+    background-color: #f2f2f2;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-footer__map-wrapp {
     position: relative;

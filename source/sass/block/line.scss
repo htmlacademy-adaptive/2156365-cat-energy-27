@@ -18,18 +18,20 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .line--contact {
-    position: relative;
-  }
+  .line {
+    &--contact {
+      position: relative;
+    }
 
-  .line--contact::before {
-    content: "";
-    position: absolute;
-    top: 25%;
-    height: 2px;
-    width: 100%;
-    background-color: #68b738;
-    z-index: -1;
+    &--contact::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      height: 2px;
+      width: 100%;
+      background-color: #68b738;
+      z-index: -1;
+    }
   }
 }
 

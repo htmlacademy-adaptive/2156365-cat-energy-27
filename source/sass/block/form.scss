@@ -147,8 +147,10 @@
   }
 }
 
-.form__contact-item:nth-child(1) {
-  margin-bottom: 14px;
+.form__contact-item {
+  &:nth-child(1) {
+    margin-bottom: 14px;
+  }
 }
 
 .form__comment {
@@ -190,6 +192,10 @@
   height: 150px;
   border: 1px solid #e7e7e7;
   resize: none;
+
+  &::placeholder {
+    color: #444444;
+  }
 }
 
 .form__additional {
@@ -588,8 +594,10 @@
     margin: 0 auto;
   }
 
-  .form__contact-item:nth-child(2) {
-    margin-left: auto;
+  .form__contact-item {
+    &:nth-child(2) {
+      margin-left: auto;
+    }
   }
 
 
