@@ -52,7 +52,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  // margin-bottom: 2px;
   color: #222222;
 }
 
@@ -90,7 +89,6 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 82px;
-    // padding-top: 65px;
     padding-top: 15px;
 
     width: 708px;
@@ -146,7 +144,6 @@
   .catalog-card__column {
     grid-column: 2/3;
     grid-row: 3/4;
-    // padding-top: 22px;
     padding-top: 14px;
   }
 
@@ -185,11 +182,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-container__losung {
-    // margin-bottom: 84px;
-    // padding-top: 78px;
     padding-top: 46px;
     margin-bottom: 85px;
-
     width: 1220px;
   }
 
@@ -205,7 +199,6 @@
   .catalog-card__iner-wrap {
     width: 245px;
     min-height: 511px;
-    // grid-template-columns: 30px 180px 35px;
     grid-template-rows: 242px min-content auto min-content 40px;
     background-color: #f2f2f2;
     grid-template-columns: 39px 168px 38px;

@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // padding-bottom: 59px;
   padding-bottom: 53px;
 }
 
@@ -23,7 +22,6 @@
   font-family: "Lato", sans-serif;
   line-height: 18px;
   color: #444444;
-  // margin-bottom: 22px;
   margin-bottom: 26px;
   padding-left: 80px;
   position: relative;
@@ -133,13 +131,10 @@
 
   .work__list {
     display: grid;
-    // grid-template-columns: 230px 230px;
     grid-template-columns: 245px 245px;
     grid-template-rows: 280px 280px;
-    // column-gap: 153px;
     row-gap: 37px;
     column-gap: 139px;
-
     padding-bottom: 47px;
     margin: 0;
     counter-reset: count 0;
@@ -234,12 +229,9 @@
 
   .work__list {
     display: grid;
-    // grid-template-columns: repeat(4, 230px);
     grid-template-columns: repeat(4, 245px);
-    // column-gap: 95px;
     column-gap: 80px;
     grid-template-rows: 280px;
-    // padding-bottom: 69px;
     padding-bottom: 39px;
   }
 

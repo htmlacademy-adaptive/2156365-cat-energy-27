@@ -165,7 +165,6 @@
 
   .complate__item {
     display: grid;
-    // grid-template-columns: 352px 140px 140px;
     grid-template-columns: 352px 185px 92px;
     grid-template-rows: 42px 40px;
     padding-top: 28px;
@@ -175,7 +174,6 @@
   }
 
   .complate__link {
-    // margin-top: 25px;
     grid-column: 1/-1;
     padding: 0;
     margin: 0;
@@ -241,7 +239,6 @@
 
   .complate__item {
     display: grid;
-    // grid-template-columns: 372px 140px 140px 244px;
     grid-template-columns: 326px 205px 120px 243px;
     grid-template-rows: 36px;
     padding: 0;
