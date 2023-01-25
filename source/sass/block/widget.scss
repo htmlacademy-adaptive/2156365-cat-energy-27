@@ -70,16 +70,17 @@
   margin: auto;
   fill: #666666;
   z-index: 2;
-
-  .widget__button:hover & {
-    fill: #68b738;
-  }
-
-  .widget__button:focus &,
-  .widget__button:active & {
-    fill: #5eaa2f;
-  }
 }
+
+.widget__button:hover .widget__arrows {
+  fill: #68b738;
+}
+
+.widget__button:focus .widget__arrows,
+.widget__button:active .widget__arrows {
+  fill: #5eaa2f;
+}
+
 
 .widget__image {
   height: 100%;
@@ -104,5 +105,12 @@
   .widget__images {
     width: 560px;
     height: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .widget {
+    padding-top: 29px;
+    padding-left: 47px;
   }
 }

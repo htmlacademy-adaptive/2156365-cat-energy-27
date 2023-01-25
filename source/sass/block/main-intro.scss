@@ -25,10 +25,6 @@
   text-align: center;
 }
 
-.main-intro__img {
-  margin-bottom: 3px;
-}
-
 .main-intro__link {
   text-transform: uppercase;
 }
@@ -37,14 +33,14 @@
   .main-intro {
     position: relative;
     width: 708px;
-    height: 872px;
+    height: 804px;
     padding: 0;
     padding-top: 16px;
   }
 
   .main-intro__link {
     margin-left: 91px;
-    margin-top: 43px;
+    margin-top: 31px;
     z-index: 2;
     text-transform: uppercase;
     position: absolute;
@@ -90,7 +86,7 @@
     line-height: 60px;
     color: #000000;
     margin-bottom: 40px;
-    padding-top: 111px;
+    padding-top: 65px;
     margin-left: 80px;
   }
 
@@ -100,7 +96,7 @@
     color: #000000;
     text-transform: uppercase;
     margin-left: 80px;
-    margin-bottom: 66px;
+    margin-bottom: 55px;
   }
 
   .main-intro__link {
@@ -113,7 +109,7 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    bottom: 54px;
     left: 448px;
+    bottom: 115px;
   }
 }
