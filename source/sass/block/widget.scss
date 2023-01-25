@@ -107,3 +107,10 @@
     height: 512px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .widget {
+    padding-top: 29px;
+    padding-left: 47px;
+  }
+}

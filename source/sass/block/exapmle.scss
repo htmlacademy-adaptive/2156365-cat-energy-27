@@ -52,7 +52,8 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 20px;
+  // margin-top: 20px;
+  margin-top: 32px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -155,11 +156,13 @@
     padding: 0;
     font-weight: 400;
     margin-bottom: 146px;
+    margin-top: 29px;
   }
 
   .example__container {
     margin: 0;
-    width: 436px;
+    // width: 436px;
+    width: 432px;
   }
 
   .example {
@@ -207,9 +210,10 @@
     line-height: 20px;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 61px;
     width: 327px;
     flex-direction: row;
+    padding: 0;
   }
 
   .example__flex {
@@ -219,6 +223,6 @@
   }
 
   .example__description-price {
-    margin-left: 63px;
+    margin-left: 66px;
   }
 }

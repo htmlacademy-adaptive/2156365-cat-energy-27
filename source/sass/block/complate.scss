@@ -6,7 +6,7 @@
   font-weight: 400;
   display: inline-block;
   background-color: #ffffff;
-  padding: 25px 20px 36px;
+  padding: 24px 20px 34px;
   margin-left: -20px;
 }
 
@@ -57,7 +57,7 @@
 .complate__item {
   display: grid;
   grid-template-columns: 140px 140px;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 19px;
   min-height: 98px;
   border-bottom: 1px solid #cdcdcd;
@@ -124,7 +124,8 @@
 
   .complate__wrapp {
     width: 708px;
-    padding-bottom: 76px;
+    padding-bottom: 75px;
+    margin-bottom: 0;
   }
 
   .complate__name {
@@ -164,16 +165,21 @@
 
   .complate__item {
     display: grid;
-    grid-template-columns: 352px 140px 140px;
-    padding-top: 13px;
-    padding-bottom: 19px;
+    // grid-template-columns: 352px 140px 140px;
+    grid-template-columns: 352px 185px 92px;
+    grid-template-rows: 42px 40px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     padding-left: 38px;
     padding-right: 38px;
   }
 
   .complate__link {
-    margin-top: 25px;
+    // margin-top: 25px;
     grid-column: 1/-1;
+    padding: 0;
+    margin: 0;
+    padding-top: 9px;
   }
 
   .complate__order {
@@ -186,6 +192,10 @@
 
     @media (min-resolution: 1.5dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/imagetable2@2x.png");
+    }
+
+    &::before {
+      left: 79px;
     }
   }
 
@@ -209,6 +219,7 @@
     display: grid;
     grid-template-columns: 896px 246px;
     column-gap: 80px;
+    padding: 0;
   }
 
   .complate__list {
@@ -224,16 +235,18 @@
     color: #000000;
     margin: 0;
     font-weight: 400;
-    padding: 76px 36px 81px 40px;
+    padding: 73px 36px 81px 40px;
     margin-left: -40px;
   }
 
   .complate__item {
     display: grid;
-    grid-template-columns: 372px 140px 140px 244px;
+    // grid-template-columns: 372px 140px 140px 244px;
+    grid-template-columns: 326px 205px 120px 243px;
+    grid-template-rows: 36px;
     padding: 0;
     min-height: 40px;
-    padding-top: 15px;
+    padding-top: 18px;
     padding-bottom: 17px;
     align-items: center;
   }
@@ -255,6 +268,9 @@
   .complate__link {
     margin-top: 0;
     grid-column: 4/-1;
+    padding: 0;
+    padding-top: 7px;
+    height: 100%;
   }
 
   .complate__order {

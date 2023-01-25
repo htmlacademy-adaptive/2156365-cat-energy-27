@@ -6,7 +6,9 @@
 }
 
 .copyright {
-  margin-top: 20px;
+  // margin-top: 20px;
+  margin-top: 16px;
+  padding-bottom: 36px;
 }
 
 .copyright__text {
@@ -23,5 +25,6 @@
 
   .copyright {
     margin: 0;
+    padding: 0;
   }
 }
