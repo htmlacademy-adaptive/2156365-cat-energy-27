@@ -40,9 +40,20 @@
   border: 1px solid #e7e7e7;
   padding-left: 20px;
   padding-top: 12px;
-
   padding-bottom: 13px;
   margin-left: 13px;
+
+  &:hover {
+    border: 2px solid  #cdcdcd;
+  }
+
+  &:invalid {
+    border: 2px solid  #ff8282;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 }
 
 .form__select {
@@ -140,11 +151,24 @@
     background-size: 17px 13px;
   }
 
+
   &--phone {
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 17px) center;
     background-size: 15px 15px;
+  }
+
+  &:hover {
+    border: 2px solid  #cdcdcd;
+  }
+
+  &:invalid {
+    border: 2px solid  #ff8282;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
   }
 }
 
@@ -281,6 +305,10 @@
   border-color: #bababa;
 }
 
+.form__additional-input:focus + .form__additional-mark {
+  border: 2px solid #000000;
+}
+
 .form__additional-input [type="checkbox"]:checked + .form__additional-mark,
 .form__additional-input[type="checkbox"]:checked + .form__additional-mark {
   background-image: url("../img/check-mark.svg");
@@ -312,6 +340,11 @@
 .form__select-input:disabled + .form__select-mark {
   border-color: #bababa;
 }
+
+.form__select-input:focus + .form__select-mark {
+  border: 2px solid #000000;
+}
+
 
 .form__select-input[type="radio"]:checked + .form__select-mark::before {
   position: absolute;

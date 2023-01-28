@@ -12,6 +12,14 @@
   display: block;
   padding-top: 39px;
   padding-bottom: 23px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 
