@@ -23,18 +23,19 @@
 @media (max-width: $mobile-width-only) {
   .site-list__item {
     border-bottom: 1px solid #e6e6e6;
-  }
 
-  .site-list__item:nth-child(1) {
-    border-top: 1px solid #e6e6e6;
+    &:nth-child(1) {
+      border-top: 1px solid #e6e6e6;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 31px;
+    margin-top: 4px;
   }
 
   .site-list__item {
@@ -86,7 +87,9 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 490px;
+    width: 480px;
+    margin: 0;
+    margin-left: 10px;
   }
 
   .site-list__item {

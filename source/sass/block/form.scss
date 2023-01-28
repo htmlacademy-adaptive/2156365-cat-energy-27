@@ -39,9 +39,21 @@
   flex-grow: 2;
   border: 1px solid #e7e7e7;
   padding-left: 20px;
-  padding-top: 14px;
+  padding-top: 12px;
   padding-bottom: 13px;
   margin-left: 13px;
+
+  &:hover {
+    border: 2px solid  #cdcdcd;
+  }
+
+  &:invalid {
+    border: 2px solid  #ff8282;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 }
 
 .form__select {
@@ -59,8 +71,8 @@
   width: 280px;
   padding: 0;
   list-style-type: none;
-  margin-top: 22px;
-  margin-bottom: 19px;
+  margin-top: 27px;
+  margin-bottom: 13px;
 }
 
 .form__select-item {
@@ -126,7 +138,7 @@
   text-transform: uppercase;
   flex-grow: 2;
   padding-left: 15px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   padding-top: 14px;
   margin-left: 10px;
   border: 1px solid #e7e7e7;
@@ -139,16 +151,31 @@
     background-size: 17px 13px;
   }
 
+
   &--phone {
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 17px) center;
     background-size: 15px 15px;
   }
+
+  &:hover {
+    border: 2px solid  #cdcdcd;
+  }
+
+  &:invalid {
+    border: 2px solid  #ff8282;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 }
 
-.form__contact-item:nth-child(1) {
-  margin-bottom: 14px;
+.form__contact-item {
+  &:nth-child(1) {
+    margin-bottom: 14px;
+  }
 }
 
 .form__comment {
@@ -186,21 +213,25 @@
   text-transform: uppercase;
   width: 100%;
   padding-left: 15px;
-  padding-top: 10px;
+  padding-top: 7px;
   height: 150px;
   border: 1px solid #e7e7e7;
   resize: none;
+
+  &::placeholder {
+    color: #444444;
+  }
 }
 
 .form__additional {
   margin: 0;
   padding: 0;
   border: none;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 .form__line-additional {
-  margin-bottom: 34px;
+  margin-bottom: 38px;
 }
 
 .form__additional-title {
@@ -227,7 +258,7 @@
   margin-bottom: 13px;
 
   &:nth-child(4) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 }
 
@@ -274,6 +305,10 @@
   border-color: #bababa;
 }
 
+.form__additional-input:focus + .form__additional-mark {
+  border: 2px solid #000000;
+}
+
 .form__additional-input [type="checkbox"]:checked + .form__additional-mark,
 .form__additional-input[type="checkbox"]:checked + .form__additional-mark {
   background-image: url("../img/check-mark.svg");
@@ -306,6 +341,11 @@
   border-color: #bababa;
 }
 
+.form__select-input:focus + .form__select-mark {
+  border: 2px solid #000000;
+}
+
+
 .form__select-input[type="radio"]:checked + .form__select-mark::before {
   position: absolute;
   top: 8px;
@@ -329,7 +369,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-bottom: 72px;
+    margin-bottom: 78px;
   }
 
   .form__personal-list {
@@ -351,21 +391,30 @@
     line-height: 30px;
   }
 
+  .form__personal-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .form__personal-input {
     font-size: 20px;
     line-height: 30px;
     padding-top: 11px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
   }
 
   .form__select-list {
     margin: 0 auto;
     padding-left: 28px;
     padding-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 628px;
-    height: 200px;
+    min-height: 200px;
     border: 1px solid #e7e7e7;
+  }
+
+  .form__select-control {
+    padding-left: 60px;
   }
 
   .form__select-item {
@@ -379,6 +428,11 @@
 
   .form__contact {
     padding-top: 71px;
+  }
+
+  .form__contact-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__line-contact {
@@ -406,6 +460,7 @@
     font-size: 20px;
     line-height: 30px;
     padding: 11px 40px 11px 20px;
+    margin-left: 20px;
   }
 
   .form__contact-name {
@@ -416,6 +471,14 @@
   .form__comment-wrap {
     width: 630px;
     margin: 0 auto;
+  }
+
+  .form__comment {
+    padding-top: 68px;
+  }
+
+  .form__line-comment {
+    margin-bottom: 75px;
   }
 
   .form__comment-title {
@@ -435,7 +498,7 @@
   }
 
   .form__additional {
-    padding-top: 65px;
+    padding-top: 62px;
   }
 
   .form__additional-title {
@@ -449,11 +512,11 @@
   .form__additional-list {
     width: 630px;
     display: grid;
-    grid-template-columns: 349px 261px;
+    grid-template-columns: 343px 286px;
     list-style-type: none;
-    row-gap: 32px;
+    row-gap: 34px;
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 49px;
   }
 
   .form__line-additional {
@@ -502,10 +565,6 @@
     background-position: 7px 10px;
   }
 
-  .form__select-control {
-    padding-left: 88px;
-  }
-
   .form__select-mark {
     width: 40px;
     height: 40px;
@@ -524,7 +583,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 82px;
+    margin-bottom: 87px;
   }
 
   .form__personal-list {
@@ -569,7 +628,7 @@
   }
 
   .form__contact {
-    padding-top: 69px;
+    padding-top: 66px;
   }
 
 
@@ -588,10 +647,15 @@
     margin: 0 auto;
   }
 
-  .form__contact-item:nth-child(2) {
-    margin-left: auto;
+  .form__contact-item {
+    &:nth-child(2) {
+      margin-left: auto;
+    }
   }
 
+  .form__line-contact {
+    margin-bottom: 73px;
+  }
 
   .form__contact-input {
     font-size: 20px;
@@ -602,6 +666,10 @@
     font-size: 20px;
     line-height: 30px;
     width: 571px;
+  }
+
+  .form__comment {
+    padding-top: 53px;
   }
 
   .form__comment-wrap {
@@ -626,7 +694,11 @@
   }
 
   .form__additional {
-    padding-top: 67px;
+    padding-top: 63px;
+  }
+
+  .form__line-additional {
+    margin-bottom: 61px;
   }
 
 
@@ -639,8 +711,8 @@
 
   .form__additional-list {
     width: 1220px;
-    grid-template-columns: repeat(4, 300px);
-    margin-bottom: 61px;
+    grid-template-columns: repeat(4, 325px);
+    margin-bottom: 56px;
   }
 
   .form__additional-item {
@@ -663,7 +735,7 @@
     margin: 0;
     font-size: 16px;
     line-height: 16px;
-    margin-left: 84px;
+    margin-left: 81px;
   }
 
   .form__additional-control {

@@ -1,5 +1,9 @@
 .main-footer__map-wrapp {
   background-color: #ffffff;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: $desktop-width) {

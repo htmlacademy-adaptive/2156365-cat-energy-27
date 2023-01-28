@@ -4,12 +4,20 @@
   font-size: 14px;
   line-height: 18px;
   display: block;
-  padding: 7px 5px;
+  padding: 10px 4px;
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
   cursor: pointer;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

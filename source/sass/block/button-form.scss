@@ -13,6 +13,14 @@
   text-transform: uppercase;
   width: 280px;
   margin-bottom: 21px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 

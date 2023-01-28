@@ -11,7 +11,15 @@
   margin: 0 auto;
   display: block;
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 23px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 
@@ -20,15 +28,17 @@
     position: relative;
   }
 
-  .index-footer__social::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #e9e9e9;
-    top: 95px;
-    left: 0;
-    box-shadow: 0 63px 0 0 #e9e9e9;
+  .index-footer__social {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e9e9e9;
+      top: 82px;
+      left: 0;
+      box-shadow: 0 63px 0 0 #e9e9e9;
+    }
   }
 }
 
@@ -44,14 +54,16 @@
 
   .index-footer__logo {
     padding: 0;
-    padding-left: 29px;
+    width: 143px;
+    height: 27px;
+    margin-right: 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .index-footer__container {
     width: 1220px;
-    padding-top: 57px;
-    padding-bottom: 58px;
+    padding-top: 68px;
+    padding-bottom: 66px;
   }
 }
