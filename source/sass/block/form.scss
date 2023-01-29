@@ -21,7 +21,7 @@
 }
 
 .form__personal-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -31,7 +31,7 @@
 }
 
 .form__personal-input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -44,17 +44,18 @@
   margin-left: 13px;
 
   &:hover {
-    border: 2px solid  #cdcdcd;
-  }
-
-  &:invalid {
-    border: 2px solid  #ff8282;
+    border: 1px solid  #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid  #ff8282;
   }
 }
+
 
 .form__select {
   border: none;
@@ -131,7 +132,7 @@
 }
 
 .form__contact-input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -160,7 +161,7 @@
   }
 
   &:hover {
-    border: 2px solid  #cdcdcd;
+    border: 1px solid  #cdcdcd;
   }
 
   &:invalid {
@@ -206,7 +207,7 @@
 
 
 .form__comment-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -275,7 +276,7 @@
 }
 
 .form__smaal {
-  font-family: "lato", sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   margin: 0 auto;
